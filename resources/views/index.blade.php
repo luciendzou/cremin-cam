@@ -16,7 +16,7 @@
         }
         .home-modal-overlay.is-active { opacity: 1; visibility: visible; }
         .home-modal-card {
-            background: white; width: 90%; max-width: 500px;
+            background: white; width: 95%; max-width: 650px;
             border-radius: 24px; padding: 40px; position: relative;
             transform: translateY(30px); transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
             text-align: center; box-shadow: 0 30px 60px rgba(0,0,0,0.3);
@@ -315,8 +315,19 @@
         <div class="home-modal-card">
             <button class="home-modal-close" id="close-modal">&times;</button>
             <div class="home-modal-tag">Opportunité</div>
-            <h3>Devenez membre de la famille CREMIN-CAM</h3>
-            <p>Profitez de nos solutions d'épargne et de crédit avec un accompagnement personnalisé. Ouvrez votre compte en quelques étapes simples.</p>
+            <h3 style="margin-bottom: 20px;">Découvrez CREMIN-CAM en vidéo</h3>
+            
+            <div class="modal-video-wrap" style="position: relative; padding-bottom: 56.25%; height: 0; border-radius: 16px; overflow: hidden; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                <iframe id="modal-video-iframe" 
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
+                    src="https://www.youtube.com/embed/yiY9H14d80w" 
+                    title="YouTube video player" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <p style="margin-bottom: 25px;">Apprenez-en plus sur notre mission et comment nous accompagnons vos projets au quotidien.</p>
             <div style="display: flex; flex-direction: column; gap: 12px;">
                 <a href="{{ route('open-account') }}" class="btn-orange" style="display: block; width: 100%; text-decoration: none;">Ouvrir un compte</a>
                 <a href="{{ route('contact') }}" style="color: #0f3d72; font-weight: 600; font-size: 0.9rem; text-decoration: none;">Parler à un conseiller</a>
@@ -389,6 +400,10 @@
             // Fermeture de la modal
             closeBtn.addEventListener('click', () => {
                 promoModal.classList.remove('is-active');
+                // Stop the video when modal is closed
+                const videoIframe = document.getElementById('modal-video-iframe');
+                const videoSrc = videoIframe.src;
+                videoIframe.src = videoSrc; 
             });
         });
     </script>
