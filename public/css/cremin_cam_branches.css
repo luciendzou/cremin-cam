@@ -1,0 +1,245 @@
+.branches-page {
+  --blue: #1a5fa8;
+  --blue-l: #2472c8;
+  --blue-pale: #e8f1fb;
+  --orange: #f5a020;
+  --orange-l: #ffb84d;
+  --orange-pale: #fef3e2;
+  --off: #f8f8f6;
+  --dark: #1a1a1a;
+  --border: #e2e8f0;
+  --gray: #6b7280;
+}
+
+.branches-page .reveal { opacity: 0; transform: translateY(20px); transition: opacity .6s ease, transform .6s ease; }
+.branches-page .reveal.visible { opacity: 1; transform: none; }
+.branches-page .d1 { transition-delay: .1s; }
+
+.branches-page .branches-hero {
+  background: var(--blue);
+  padding: 64px 5% 56px;
+  position: relative;
+  overflow: hidden;
+}
+
+.branches-page .branches-hero::before,
+.branches-page .branches-hero::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+
+.branches-page .branches-hero::before {
+  right: -80px;
+  top: -80px;
+  width: 380px;
+  height: 380px;
+  background: rgba(245, 160, 32, .1);
+}
+
+.branches-page .branches-hero::after {
+  left: 38%;
+  bottom: -70px;
+  width: 260px;
+  height: 260px;
+  background: rgba(255, 255, 255, .04);
+}
+
+.branches-page .branches-hero-inner,
+.branches-page .region-nav-in,
+.branches-page .main-layout,
+.branches-page .find-in,
+.branches-page .solo-in {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.branches-page .branches-hero-inner {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 48px;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.branches-page .hero-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(245, 160, 32, .2);
+  color: var(--orange);
+  padding: 5px 14px;
+  border-radius: 100px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .6px;
+  margin-bottom: 18px;
+}
+
+.branches-page .branches-hero h1 {
+  font-size: clamp(28px, 4vw, 48px);
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.1;
+  margin-bottom: 14px;
+}
+
+.branches-page .branches-hero h1 span { color: var(--orange); }
+
+.branches-page .hero-sub {
+  font-size: 15.5px;
+  color: rgba(255, 255, 255, .72);
+  line-height: 1.7;
+  max-width: 520px;
+  margin-bottom: 28px;
+}
+
+.branches-page .hero-stats { display: flex; gap: 32px; flex-wrap: wrap; }
+.branches-page .hstat-num { font-size: 30px; font-weight: 700; color: #fff; line-height: 1; }
+.branches-page .hstat-num sup { font-size: 18px; color: var(--orange); }
+.branches-page .hstat-label { font-size: 11.5px; color: rgba(255, 255, 255, .55); margin-top: 3px; letter-spacing: .3px; }
+
+.branches-page .hero-badges { display: flex; flex-direction: column; gap: 10px; flex-shrink: 0; }
+.branches-page .hbadge { background: rgba(255, 255, 255, .1); border: 1px solid rgba(255, 255, 255, .2); border-radius: 10px; padding: 14px 18px; display: flex; align-items: center; gap: 12px; min-width: 200px; }
+.branches-page .hbadge-icon { width: 34px; height: 34px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.branches-page .hbadge-icon.blue { background: var(--blue-l); }
+.branches-page .hbadge-icon.orange { background: rgba(245, 160, 32, .3); }
+.branches-page .hbadge-icon svg { width: 17px; height: 17px; stroke: #fff; fill: none; stroke-width: 2; }
+.branches-page .hbadge-title { font-size: 13px; font-weight: 700; color: #fff; }
+.branches-page .hbadge-sub { font-size: 11px; color: rgba(255, 255, 255, .55); margin-top: 1px; }
+
+.branches-page .region-nav { background: #fff; border-bottom: 2px solid var(--border); position: sticky; top: 64px; z-index: 90; }
+.branches-page .region-nav-in { padding: 0 5%; display: flex; overflow-x: auto; }
+.branches-page .rtab { padding: 16px 28px; font-size: 13.5px; font-weight: 700; color: #888; cursor: pointer; border-bottom: 3px solid transparent; margin-bottom: -2px; transition: color .2s, border-color .2s; white-space: nowrap; background: none; border-top: none; border-left: none; border-right: none; display: flex; align-items: center; gap: 8px; }
+.branches-page .rtab svg { width: 14px; height: 14px; stroke: currentColor; fill: none; stroke-width: 2; }
+.branches-page .rtab.active { color: var(--blue); border-bottom-color: var(--orange); }
+.branches-page .rtab-count { background: var(--blue-pale); color: var(--blue); font-size: 10px; font-weight: 700; padding: 2px 7px; border-radius: 100px; }
+.branches-page .rtab.active .rtab-count { background: var(--orange-pale); color: #8b5400; }
+
+.branches-page .main-layout { padding: 60px 5% 80px; display: grid; grid-template-columns: 380px 1fr; gap: 48px; align-items: start; }
+.branches-page .map-wrap { position: sticky; top: 140px; }
+.branches-page .map-card { background: var(--off); border: 1.5px solid var(--border); border-radius: 16px; padding: 24px; text-align: center; }
+.branches-page .map-title { font-size: 13px; font-weight: 700; color: var(--dark); margin-bottom: 4px; }
+.branches-page .map-sub { font-size: 12px; color: var(--gray); margin-bottom: 20px; }
+.branches-page .map-svg-wrap { position: relative; width: 100%; }
+.branches-page .map-legend { display: flex; justify-content: center; gap: 20px; margin-top: 16px; flex-wrap: wrap; }
+.branches-page .map-leg-item { display: flex; align-items: center; gap: 6px; font-size: 11.5px; color: var(--gray); }
+.branches-page .map-leg-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+.branches-page .map-leg-dot.primary { background: var(--blue); }
+.branches-page .map-leg-dot.orange { background: var(--orange); }
+.branches-page .map-leg-dot.muted { background: #ccc; width: 8px; height: 8px; }
+
+.branches-page .region-block + .region-block { margin-top: 40px; }
+.branches-page .region-header { margin-bottom: 28px; }
+.branches-page .region-name,
+.branches-page .mini-tag { font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--orange); margin-bottom: 8px; }
+.branches-page .region-title,
+.branches-page .find-title { font-size: clamp(22px, 3vw, 30px); font-weight: 700; color: var(--dark); margin-bottom: 8px; line-height: 1.12; }
+.branches-page .find-title span { color: var(--blue); }
+.branches-page .region-desc,
+.branches-page .find-copy { font-size: 14.5px; color: var(--gray); line-height: 1.65; }
+.branches-page .agency-cards { display: flex; flex-direction: column; gap: 20px; }
+.branches-page .agency-card { background: #fff; border: 1.5px solid var(--border); border-radius: 14px; overflow: hidden; transition: border-color .25s, box-shadow .25s; }
+.branches-page .agency-card:hover { border-color: var(--blue); box-shadow: 0 12px 32px rgba(26, 95, 168, .1); }
+.branches-page .agency-card-header { background: var(--blue); padding: 22px 26px; display: flex; align-items: center; justify-content: space-between; }
+.branches-page .agency-card-header.orange-header { background: var(--orange); }
+.branches-page .agency-card-header.muted-header { background: #5c8fa8; }
+.branches-page .agency-type-badge { display: inline-flex; align-items: center; gap: 6px; background: rgba(255, 255, 255, .15); color: #fff; font-size: 10px; font-weight: 700; padding: 4px 10px; border-radius: 100px; letter-spacing: .4px; border: 1px solid rgba(255, 255, 255, .2); }
+.branches-page .agency-type-badge.light-badge { background: rgba(255, 255, 255, .2); border-color: rgba(255, 255, 255, .3); }
+.branches-page .agency-type-badge.guichet { background: rgba(245, 160, 32, .3); border-color: rgba(245, 160, 32, .4); color: var(--orange); }
+.branches-page .agency-name { font-size: 19px; font-weight: 700; color: #fff; margin-top: 8px; }
+.branches-page .agency-status { display: flex; align-items: center; gap: 5px; font-size: 11px; color: rgba(255, 255, 255, .7); }
+.branches-page .status-dot { width: 6px; height: 6px; border-radius: 50%; background: #4ade80; flex-shrink: 0; animation: branches-pulse 2s infinite; }
+@keyframes branches-pulse { 0%, 100% { opacity: 1; } 50% { opacity: .4; } }
+.branches-page .agency-card-body { padding: 24px 26px; }
+.branches-page .agency-info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.branches-page .ainfo { display: flex; gap: 10px; align-items: flex-start; }
+.branches-page .ainfo-icon { width: 32px; height: 32px; background: var(--blue-pale); border-radius: 7px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; }
+.branches-page .ainfo-icon svg { width: 15px; height: 15px; stroke: var(--blue); fill: none; stroke-width: 2; }
+.branches-page .ainfo-label { font-size: 11px; color: #aaa; letter-spacing: .3px; margin-bottom: 3px; font-weight: 700; text-transform: uppercase; }
+.branches-page .ainfo-val { font-size: 13.5px; font-weight: 700; color: var(--dark); line-height: 1.45; }
+.branches-page .ainfo-val a { color: var(--blue); text-decoration: none; }
+.branches-page .ainfo-val a:hover { text-decoration: underline; }
+.branches-page .agency-card-footer { border-top: 1px solid var(--border); padding: 14px 26px; display: flex; align-items: center; justify-content: space-between; background: var(--off); }
+.branches-page .hours-row { display: flex; align-items: center; gap: 8px; font-size: 12.5px; color: var(--gray); }
+.branches-page .hours-row svg { width: 13px; height: 13px; stroke: var(--orange); fill: none; stroke-width: 2; flex-shrink: 0; }
+.branches-page .btn-itineraire,
+.branches-page .btn-orange-s,
+.branches-page .btn-outline-ws,
+.branches-page .call-now { display: inline-flex; align-items: center; justify-content: center; gap: 6px; text-decoration: none; transition: all .2s; }
+.branches-page .btn-itineraire { background: var(--blue); color: #fff; padding: 8px 16px; border-radius: 6px; font-size: 12.5px; font-weight: 700; }
+.branches-page .btn-itineraire:hover { background: var(--blue-l); transform: translateY(-1px); }
+.branches-page .btn-itineraire svg { width: 13px; height: 13px; stroke: #fff; fill: none; stroke-width: 2; }
+
+.branches-page .find-section { background: var(--off); padding: 72px 5%; }
+.branches-page .find-in { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+.branches-page .find-ways { display: flex; flex-direction: column; gap: 16px; margin-top: 32px; }
+.branches-page .find-way { background: #fff; border: 1.5px solid var(--border); border-radius: 12px; padding: 20px 22px; display: flex; gap: 16px; align-items: center; transition: border-color .2s; }
+.branches-page .find-way:hover { border-color: var(--blue); }
+.branches-page .fw-icon { width: 44px; height: 44px; background: var(--blue-pale); border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.branches-page .fw-icon svg { width: 21px; height: 21px; stroke: var(--blue); fill: none; stroke-width: 1.9; }
+.branches-page .fw-title { font-size: 14.5px; font-weight: 700; color: var(--dark); margin-bottom: 4px; }
+.branches-page .fw-desc { font-size: 13px; color: var(--gray); line-height: 1.5; }
+.branches-page .fw-desc strong { color: var(--blue); }
+.branches-page .find-side-card { background: #fff; border: 1.5px solid var(--border); border-radius: 16px; padding: 32px; text-align: center; }
+.branches-page .find-side-icon { width: 60px; height: 60px; background: var(--blue-pale); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; }
+.branches-page .find-side-title { font-size: 17px; font-weight: 700; color: var(--dark); margin-bottom: 8px; }
+.branches-page .find-side-copy { font-size: 13.5px; color: var(--gray); line-height: 1.6; margin-bottom: 24px; }
+.branches-page .hours-box { background: var(--off); border-radius: 10px; padding: 16px; text-align: left; margin-bottom: 16px; }
+.branches-page .hours-title { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #aaa; margin-bottom: 10px; }
+.branches-page .hours-line { font-size: 13px; color: var(--dark); display: flex; justify-content: space-between; margin-bottom: 6px; }
+.branches-page .hours-line.closed { color: #e74c3c; margin-bottom: 0; }
+.branches-page .call-now { display: block; background: var(--blue); color: #fff; padding: 13px; border-radius: 8px; font-size: 14px; font-weight: 700; }
+.branches-page .call-now:hover { background: var(--blue-l); }
+
+.branches-page .solo-band { background: var(--blue); padding: 64px 5%; }
+.branches-page .solo-in { display: flex; align-items: center; justify-content: space-between; gap: 40px; }
+.branches-page .solo-content h2 { font-size: clamp(22px, 3vw, 34px); font-weight: 700; color: #fff; line-height: 1.2; margin-bottom: 12px; }
+.branches-page .solo-content h2 span { color: var(--orange); }
+.branches-page .solo-content p { font-size: 15px; color: rgba(255, 255, 255, .68); line-height: 1.65; max-width: 420px; }
+.branches-page .solo-btns { display: flex; flex-direction: column; gap: 12px; flex-shrink: 0; }
+.branches-page .btn-orange-s { background: var(--orange); color: #fff; padding: 13px 26px; border-radius: 6px; font-size: 14px; font-weight: 700; white-space: nowrap; text-align: center; }
+.branches-page .btn-orange-s:hover { background: var(--orange-l); transform: translateY(-2px); }
+.branches-page .btn-outline-ws { border: 2px solid rgba(255, 255, 255, .4); color: #fff; padding: 13px 26px; border-radius: 6px; font-size: 14px; font-weight: 700; white-space: nowrap; text-align: center; }
+.branches-page .btn-outline-ws:hover { border-color: #fff; background: rgba(255, 255, 255, .1); }
+
+@media (max-width: 1024px) {
+  .branches-page .branches-hero-inner,
+  .branches-page .main-layout,
+  .branches-page .find-in {
+    grid-template-columns: 1fr;
+  }
+
+  .branches-page .solo-in {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .branches-page .map-wrap { position: static; width: 100%; }
+  .branches-page .agency-info-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+  .branches-page .agency-card-header,
+  .branches-page .agency-card-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 640px) {
+  .branches-page .branches-hero { padding: 54px 5% 48px; }
+  .branches-page .hero-stats,
+  .branches-page .map-legend { gap: 14px; }
+  .branches-page .region-nav-in { padding: 0 16px; }
+  .branches-page .main-layout,
+  .branches-page .find-section,
+  .branches-page .solo-band { padding-left: 16px; padding-right: 16px; }
+  .branches-page .map-card,
+  .branches-page .find-side-card,
+  .branches-page .agency-card-body,
+  .branches-page .agency-card-header,
+  .branches-page .agency-card-footer { padding-left: 18px; padding-right: 18px; }
+}

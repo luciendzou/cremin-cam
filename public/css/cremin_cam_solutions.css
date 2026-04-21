@@ -1,0 +1,560 @@
+.page-hero {
+  background: linear-gradient(135deg, #f8fbff 0%, #eaf3ff 60%, #fff8ee 100%);
+  padding: 80px 0 60px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-hero::before,
+.page-hero::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.page-hero::before {
+  top: -80px;
+  right: -80px;
+  width: 380px;
+  height: 380px;
+  background: radial-gradient(circle, rgba(245, 166, 35, 0.13) 0%, transparent 70%);
+}
+
+.page-hero::after {
+  bottom: -60px;
+  left: -60px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(26, 107, 191, 0.09) 0%, transparent 70%);
+}
+
+.page-hero-inner,
+.sol-tabs,
+.sol-inner,
+.accounts-grid,
+.credit-table-wrap,
+.epargne-highlight,
+.sol-cta-inline {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.page-hero-inner {
+  max-width: 760px;
+  position: relative;
+  z-index: 1;
+}
+
+.page-hero-breadcrumb {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 20px;
+}
+
+.page-hero-breadcrumb a {
+  color: #1a6bbf;
+  text-decoration: none;
+}
+
+.page-hero h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 800;
+  color: #0d1b2e;
+  line-height: 1.15;
+  margin: 0 0 18px;
+}
+
+.page-hero h1 .accent { color: #1a6bbf; }
+.page-hero h1 .accent-o { color: #f5a623; }
+
+.page-hero p {
+  font-size: 17px;
+  color: #555;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.sol-tabs-wrap {
+  background: #fff;
+  border-bottom: 1px solid #eaeef5;
+  position: sticky;
+  top: 66px;
+  z-index: 40;
+  box-shadow: 0 2px 12px rgba(26, 107, 191, 0.07);
+}
+
+.sol-tabs {
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.sol-tabs::-webkit-scrollbar { display: none; }
+
+.sol-tab {
+  font-size: 14px;
+  font-weight: 600;
+  color: #777;
+  padding: 16px 22px;
+  white-space: nowrap;
+  border-bottom: 3px solid transparent;
+  text-decoration: none;
+}
+
+.sol-tab:hover,
+.sol-tab.active {
+  color: #1a6bbf;
+  border-bottom-color: #1a6bbf;
+}
+
+.sol-section {
+  padding: 80px 0 60px;
+}
+
+.sol-section:nth-child(odd) { background: #fff; }
+.sol-section:nth-child(even) { background: #f8fbff; }
+
+.sol-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.sol-inner.reverse { direction: rtl; }
+.sol-inner.reverse > * { direction: ltr; }
+
+.sol-card-main {
+  background: linear-gradient(145deg, #1a6bbf 0%, #1254a0 100%);
+  border-radius: 20px;
+  padding: 36px;
+  color: #fff;
+  box-shadow: 0 20px 60px rgba(26, 107, 191, 0.22);
+  position: relative;
+  overflow: hidden;
+}
+
+.sol-card-main::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  width: 140px;
+  height: 140px;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 50%;
+}
+
+.sol-card-icon,
+.acc-card-icon,
+.sol-feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sol-card-icon {
+  width: 52px;
+  height: 52px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 14px;
+  margin-bottom: 20px;
+}
+
+.sol-card-icon svg,
+.acc-card-icon svg,
+.sol-feature-icon svg {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.sol-card-icon svg {
+  width: 26px;
+  height: 26px;
+  stroke: #fff;
+  stroke-width: 2;
+}
+
+.sol-card-main h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.sol-card-main p {
+  font-size: 14px;
+  opacity: 0.85;
+  line-height: 1.6;
+  margin: 0 0 24px;
+}
+
+.sol-card-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.sol-card-badge-dot {
+  width: 7px;
+  height: 7px;
+  background: #f5a623;
+  border-radius: 50%;
+}
+
+.sol-visual { position: relative; }
+
+.sol-float {
+  position: absolute;
+  background: #fff;
+  border-radius: 14px;
+  padding: 14px 18px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.sol-float-1 { bottom: -24px; right: -24px; }
+.sol-float-2 { top: -18px; left: -24px; }
+
+.sf-num {
+  font-size: 22px;
+  font-weight: 800;
+  color: #f5a623;
+  line-height: 1;
+}
+
+.sf-label {
+  font-size: 11px;
+  color: #888;
+  margin-top: 2px;
+}
+
+.sol-tag {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #1a6bbf;
+  background: #eaf3ff;
+  border-radius: 20px;
+  padding: 5px 14px;
+  margin-bottom: 16px;
+}
+
+.sol-text h2 {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 800;
+  color: #0d1b2e;
+  line-height: 1.2;
+  margin: 0 0 16px;
+}
+
+.sol-text h2 .blue { color: #1a6bbf; }
+.sol-text h2 .orange { color: #f5a623; }
+
+.sol-text > p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.75;
+  margin: 0 0 28px;
+}
+
+.sol-features {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 32px;
+}
+
+.sol-feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.sol-feature-icon {
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  background: #eaf3ff;
+  border-radius: 10px;
+}
+
+.sol-feature-icon svg {
+  width: 16px;
+  height: 16px;
+  stroke: #1a6bbf;
+  stroke-width: 2.2;
+}
+
+.sol-feature-body h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #0d1b2e;
+  margin: 0 0 3px;
+}
+
+.sol-feature-body p {
+  font-size: 13px;
+  color: #777;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.sol-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #1a6bbf;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 14px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 4px 18px rgba(26, 107, 191, 0.25);
+}
+
+.sol-btn.orange {
+  background: #f5a623;
+  box-shadow: 0 4px 18px rgba(245, 166, 35, 0.3);
+}
+
+.accounts-grid {
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.acc-card {
+  background: #fff;
+  border: 1.5px solid #eaeef5;
+  border-radius: 16px;
+  padding: 28px 24px;
+}
+
+.acc-card-icon {
+  width: 44px;
+  height: 44px;
+  background: #eaf3ff;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.acc-card-icon svg {
+  width: 22px;
+  height: 22px;
+  stroke: #1a6bbf;
+  stroke-width: 2;
+}
+
+.acc-card h4 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #0d1b2e;
+  margin: 0 0 8px;
+}
+
+.acc-card p {
+  font-size: 13px;
+  color: #777;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.acc-tag,
+.badge-taux {
+  display: inline-block;
+  margin-top: 14px;
+  font-size: 11px;
+  font-weight: 700;
+  border-radius: 10px;
+}
+
+.acc-tag {
+  color: #f5a623;
+  background: #fff8ee;
+  padding: 3px 10px;
+}
+
+.credit-table-wrap {
+  margin-bottom: 60px;
+  overflow-x: auto;
+}
+
+.credit-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+}
+
+.credit-table thead tr {
+  background: #1a6bbf;
+  color: #fff;
+}
+
+.credit-table th,
+.credit-table td {
+  padding: 14px 20px;
+  text-align: left;
+}
+
+.credit-table th {
+  font-size: 13px;
+  letter-spacing: 0.04em;
+}
+
+.credit-table tbody tr {
+  border-bottom: 1px solid #f0f4fa;
+}
+
+.credit-table td:first-child {
+  font-weight: 600;
+  color: #0d1b2e;
+}
+
+.badge-taux {
+  background: #eaf3ff;
+  color: #1a6bbf;
+  font-size: 13px;
+  padding: 3px 10px;
+}
+
+.badge-taux.orange {
+  background: #fff8ee;
+  color: #f5a623;
+}
+
+.table-note {
+  font-size: 12px;
+  color: #aaa;
+  margin: 12px 24px 0;
+  text-align: right;
+}
+
+.epargne-highlight {
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.eh-card {
+  border-radius: 18px;
+  padding: 30px 26px;
+}
+
+.eh-card.blue { background: linear-gradient(135deg, #1a6bbf, #1254a0); color: #fff; }
+.eh-card.orange { background: linear-gradient(135deg, #f5a623, #d9900f); color: #fff; }
+.eh-card.light { background: #f8fbff; border: 1.5px solid #e0ebff; color: #0d1b2e; }
+
+.eh-num {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.eh-label {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.eh-sub {
+  font-size: 12px;
+  margin-top: 10px;
+  opacity: 0.75;
+}
+
+.sol-cta-inline {
+  margin: 60px auto 0;
+}
+
+.sol-cta-box {
+  background: linear-gradient(135deg, #0d1b2e 0%, #1a3a6e 100%);
+  border-radius: 24px;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  overflow: hidden;
+  position: relative;
+}
+
+.sol-cta-box h3 {
+  font-size: 22px;
+  font-weight: 800;
+  color: #fff;
+  margin: 0 0 8px;
+}
+
+.sol-cta-box p {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.sol-cta-btns {
+  display: flex;
+  gap: 14px;
+  flex-shrink: 0;
+}
+
+.sol-theme-orange { background: linear-gradient(145deg, #f5a623 0%, #d9900f 100%); }
+.sol-theme-dark { background: linear-gradient(145deg, #0d1b2e 0%, #1a3a6e 100%); }
+.sol-theme-mix { background: linear-gradient(145deg, #1a6bbf, #0d1b2e); }
+.sol-theme-warm { background: linear-gradient(145deg, #f5a623, #1a6bbf); }
+
+@media (max-width: 768px) {
+  .sol-tabs-wrap { top: 98px; }
+  .sol-inner,
+  .sol-inner.reverse {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    direction: ltr;
+  }
+
+  .epargne-highlight {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .sol-cta-box {
+    flex-direction: column;
+    text-align: center;
+    padding: 36px 24px;
+  }
+
+  .sol-cta-btns {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .sol-float-1,
+  .sol-float-2 {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .epargne-highlight,
+  .accounts-grid {
+    grid-template-columns: 1fr;
+  }
+}

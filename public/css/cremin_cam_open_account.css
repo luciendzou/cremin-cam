@@ -1,0 +1,1308 @@
+.open-account-page {
+    --oa-blue: #1a5fa8;
+    --oa-blue-light: #2472c8;
+    --oa-blue-pale: #e8f1fb;
+    --oa-blue-dark: #0f3d72;
+    --oa-orange: #f5a020;
+    --oa-orange-pale: #fef3e2;
+    --oa-green: #1e6b45;
+    --oa-green-pale: #e6f4ec;
+    --oa-off: #f8f8f6;
+    --oa-text: #1a1a1a;
+    --oa-border: #e2e8f0;
+    width: 100%;
+    background: #fff;
+    color: var(--oa-text);
+    --sv-border: #e2e8f0;
+    --sv-dark : #1a1a1a;    
+}
+
+.open-account-page .open-account-stripe {
+    height: 3px;
+    background: linear-gradient(
+        to right,
+        var(--oa-blue),
+        var(--oa-orange),
+        var(--oa-blue)
+    );
+}
+
+.open-account-page .hero {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    min-height: auto;
+    display: block;
+    background: var(--oa-blue);
+    padding: 10px 5% 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+.open-account-page .hero::before,
+.open-account-page .hero::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.open-account-page .hero::before {
+    right: -80px;
+    top: -80px;
+    width: 440px;
+    height: 440px;
+    background: rgba(245, 160, 32, 0.09);
+}
+
+.open-account-page .hero::after {
+    left: 38%;
+    bottom: -60px;
+    width: 280px;
+    height: 280px;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.open-account-page .hero-inner,
+.open-account-page .trust-inner,
+.open-account-page .accounts-section,
+.open-account-page .steps-inner,
+.open-account-page .docs-section,
+.open-account-page .benefits-inner,
+.open-account-page .appointment-section,
+.open-account-page .faq-mini-section,
+.open-account-page .cta-section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.open-account-page .hero-inner {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 380px;
+    min-height: 420px;
+    gap: 0;
+    align-items: end;
+}
+
+.open-account-page .hero-mascot {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 0;
+    align-self: stretch;
+}
+
+.open-account-page .hero-photo-card {
+    width: 100%;
+    height: 100%;
+    min-height: 420px;
+    overflow: hidden;
+    border-radius: 0;
+    display: flex;
+    align-items: flex-end;
+}
+
+.open-account-page .hero-photo-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+}
+
+.open-account-page .hero-text {
+    color: #fff;
+    padding: 35px 0;
+}
+
+.open-account-page .hero-badge,
+.open-account-page .section-tag,
+.open-account-page .account-badge,
+.open-account-page .step-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+}
+
+.open-account-page .hero-badge {
+    padding: 5px 14px;
+    border-radius: 999px;
+    margin-bottom: 18px;
+    background: rgba(245, 160, 32, 0.2);
+    color: var(--oa-orange);
+}
+
+.open-account-page h1,
+.open-account-page .section-title,
+.open-account-page .cta-title {
+    margin: 0;
+    font-weight: 700;
+    line-height: 1.08;
+}
+
+.open-account-page h1 {
+    font-size: clamp(28px, 4vw, 50px);
+    color: #fff;
+    margin-bottom: 14px;
+}
+
+.open-account-page h1 span,
+.open-account-page .section-title span,
+.open-account-page .cta-title span {
+    color: var(--oa-orange);
+}
+
+.open-account-page .hero-subtitle,
+.open-account-page .section-subtitle,
+.open-account-page .cta-copy {
+    line-height: 1.72;
+}
+
+.open-account-page .hero-subtitle {
+    margin-bottom: 28px;
+    font-size: 15.5px;
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.open-account-page .hero-perks {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 32px;
+}
+
+.open-account-page .hero-perk {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.open-account-page .perk-icon,
+.open-account-page .feature-check,
+.open-account-page .benefit-icon,
+.open-account-page .trust-item svg {
+    flex-shrink: 0;
+}
+
+.open-account-page .perk-icon {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: rgba(245, 160, 32, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.open-account-page .perk-icon svg,
+.open-account-page .feature-check svg,
+.open-account-page .benefit-icon svg,
+.open-account-page .trust-item svg,
+.open-account-page .mini-faq-chevron svg,
+.open-account-page .channel-icon svg,
+.open-account-page .submit-button svg,
+.open-account-page .hero-form-button svg {
+    fill: none;
+    stroke-width: 2.5;
+}
+
+.open-account-page .perk-icon svg {
+    width: 11px;
+    height: 11px;
+    stroke: var(--oa-orange);
+    stroke-width: 3;
+}
+
+.open-account-page .hero-buttons,
+.open-account-page .appointment-layout,
+.open-account-page .mini-faq-grid,
+.open-account-page .cta-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.open-account-page .button-primary,
+.open-account-page .button-secondary,
+.open-account-page .account-cta,
+.open-account-page .hero-form-button,
+.open-account-page .submit-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.22s ease;
+}
+
+.open-account-page .button-primary,
+.open-account-page .account-cta,
+.open-account-page .hero-form-button,
+.open-account-page .submit-button {
+    background: var(--oa-orange);
+    color: #fff;
+}
+
+.open-account-page .button-primary,
+.open-account-page .button-secondary {
+    padding: 14px 28px;
+    font-size: 14px;
+}
+
+.open-account-page .button-primary:hover,
+.open-account-page .account-cta:hover,
+.open-account-page .hero-form-button:hover {
+    background: #ffb84d;
+    transform: translateY(-2px);
+}
+
+.open-account-page .button-secondary {
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    color: #fff;
+}
+
+.open-account-page .button-secondary:hover {
+    border-color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.open-account-page .hero-form {
+    padding: 28px 26px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(4px);
+}
+
+.open-account-page .hero-form-title {
+    margin: 0 0 6px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.open-account-page .hero-form-subtitle,
+.open-account-page .hero-form-note,
+.open-account-page .appointment-note,
+.open-account-page .field-note {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.open-account-page .hero-form-subtitle {
+    margin-bottom: 20px;
+}
+
+.open-account-page .hero-field,
+.open-account-page .form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 12px;
+}
+
+.open-account-page .hero-field label,
+.open-account-page .form-field label {
+    font-size: 12.5px;
+    font-weight: 700;
+}
+
+.open-account-page .hero-field label {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.open-account-page .hero-field input,
+.open-account-page .hero-field select,
+.open-account-page .form-field input,
+.open-account-page .form-field select,
+.open-account-page .form-field textarea {
+    width: 100%;
+    padding: 11px 14px;
+    border-radius: 8px;
+    font: inherit;
+    outline: none;
+}
+
+.open-account-page .hero-field input,
+.open-account-page .hero-field select {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.12);
+    color: #fff;
+}
+
+.open-account-page .hero-field input::placeholder {
+    color: rgba(255, 255, 255, 0.45);
+}
+
+.open-account-page .hero-field select option {
+    background: var(--oa-blue-dark);
+}
+
+.open-account-page .hero-form-button {
+    width: 100%;
+    border: none;
+    padding: 13px;
+    margin-top: 16px;
+    cursor: pointer;
+    font: inherit;
+}
+
+.open-account-page .hero-form-note {
+    margin-top: 10px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.42);
+}
+
+.open-account-page .trust-band,
+.open-account-page .benefits-section {
+    background: var(--oa-blue-dark);
+}
+
+.open-account-page .trust-band {
+    padding: 20px 5%;
+}
+
+.open-account-page .trust-inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.open-account-page .trust-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 13px;
+}
+
+.open-account-page .trust-item svg {
+    width: 16px;
+    height: 16px;
+    stroke: var(--oa-orange);
+}
+
+.open-account-page .accounts-section,
+.open-account-page .docs-section,
+.open-account-page .appointment-section {
+    padding: 88px 5%;
+}
+
+.open-account-page .steps-section,
+.open-account-page .faq-mini-section {
+    padding: 88px 5%;
+    background: var(--oa-off);
+    border-top: 1px solid var(--oa-border);
+}
+
+.open-account-page .benefits-section,
+.open-account-page .cta-section {
+    padding: 88px 5%;
+}
+
+.open-account-page .section-tag {
+    padding: 0;
+    color: var(--oa-orange);
+    letter-spacing: 2.5px;
+}
+
+.open-account-page .section-title {
+    font-size: clamp(26px, 3.5vw, 40px);
+    margin-bottom: 14px;
+}
+
+.open-account-page .section-subtitle {
+    max-width: 560px;
+    margin-bottom: 52px;
+    color: #666;
+    font-size: 15.5px;
+}
+
+.open-account-page .account-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin-bottom: 40px;
+    border: 1.5px solid var(--oa-border);
+    border-radius: 12px;
+}
+
+.open-account-page .account-tab {
+    flex: 1;
+    min-width: 100px;
+    padding: 14px 16px;
+    border: none;
+    border-right: 1px solid var(--oa-border);
+    background: #fff;
+    color: #999;
+    font: inherit;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.open-account-page .account-tab:last-child {
+    border-right: none;
+}
+
+.open-account-page .account-tab.is-active {
+    background: var(--oa-blue);
+    color: #fff;
+}
+
+.open-account-page .account-tab:hover:not(.is-active) {
+    background: var(--oa-blue-pale);
+    color: var(--oa-blue);
+}
+
+.open-account-page .account-panel {
+    display: none;
+}
+
+.open-account-page .account-panel.is-active {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 56px;
+    align-items: start;
+}
+
+.open-account-page .account-info h3 {
+    margin: 0 0 10px;
+    font-size: clamp(22px, 3vw, 30px);
+}
+
+.open-account-page .account-description {
+    margin-bottom: 28px;
+    color: #555;
+    font-size: 15px;
+}
+
+.open-account-page .feature-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.open-account-page .feature-item {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--oa-border);
+}
+
+.open-account-page .feature-item:last-child {
+    border-bottom: none;
+}
+
+.open-account-page .feature-check {
+    width: 22px;
+    height: 22px;
+    margin-top: 2px;
+    border-radius: 50%;
+    background: var(--oa-green-pale);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.open-account-page .feature-check svg {
+    width: 11px;
+    height: 11px;
+    stroke: var(--oa-green);
+    stroke-width: 3;
+}
+
+.open-account-page .feature-copy h4 {
+    margin: 0 0 3px;
+    font-size: 14px;
+}
+
+.open-account-page .feature-copy p {
+    margin: 0;
+    color: #666;
+    font-size: 13px;
+    line-height: 1.55;
+}
+
+.open-account-page .account-card {
+    position: relative;
+    overflow: hidden;
+    padding: 36px;
+    border-radius: 18px;
+    color: #fff;
+}
+
+.open-account-page .account-card::before {
+    content: "";
+    position: absolute;
+    right: -40px;
+    top: -40px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: rgba(245, 160, 32, 0.15);
+}
+
+.open-account-page .account-card-body {
+    position: relative;
+    z-index: 1;
+}
+
+.open-account-page .account-badge {
+    padding: 4px 10px;
+    margin-bottom: 14px;
+    border-radius: 999px;
+    background: rgba(245, 160, 32, 0.25);
+    color: var(--oa-orange);
+}
+
+.open-account-page .account-name {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.open-account-page .account-card-description {
+    margin-bottom: 24px;
+    color: rgba(255, 255, 255, 0.68);
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.open-account-page .account-divider {
+    height: 1px;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.open-account-page .document-title {
+    margin-bottom: 12px;
+    color: rgba(255, 255, 255, 0.58);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.open-account-page .account-documents ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+}
+
+.open-account-page .account-documents li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: rgba(255, 255, 255, 0.84);
+    font-size: 13px;
+}
+
+.open-account-page .account-documents li::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--oa-orange);
+}
+
+.open-account-page .account-cta {
+    display: block;
+    margin-top: 24px;
+    padding: 13px;
+    text-align: center;
+}
+
+.open-account-page .steps-header,
+.open-account-page .benefits-header,
+.open-account-page .faq-mini-header {
+    text-align: center;
+}
+
+.open-account-page .steps-header .section-subtitle,
+.open-account-page .benefits-header .section-subtitle,
+.open-account-page .faq-mini-header .section-subtitle {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.open-account-page .steps-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.open-account-page .step-card {
+    text-align: center;
+}
+
+.open-account-page .step-number {
+    width: 72px;
+    height: 72px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    border: 3px solid var(--oa-orange);
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 14px rgba(245, 160, 32, 0.2);
+}
+
+.open-account-page .step-number span {
+    color: var(--oa-orange);
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.open-account-page .step-title {
+    margin-bottom: 8px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.open-account-page .step-description {
+    color: #777;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.open-account-page .step-badge {
+    margin-top: 10px;
+    padding: 3px 9px;
+    border-radius: 999px;
+    background: var(--oa-blue-pale);
+    color: var(--oa-blue);
+}
+
+.open-account-page .docs-grid,
+.open-account-page .benefits-grid {
+    display: grid;
+    gap: 20px;
+}
+
+.open-account-page .docs-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.open-account-page .benefits-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.open-account-page .document-card,
+.open-account-page .benefit-card,
+.open-account-page .appointment-card,
+.open-account-page .mini-faq-item {
+    border-radius: 14px;
+}
+
+.open-account-page .document-card {
+    padding: 28px;
+    border: 1.5px solid var(--oa-border);
+    background: #fff;
+}
+
+.open-account-page .document-card:hover {
+    border-color: var(--oa-blue);
+    transform: translateY(-3px);
+}
+
+.open-account-page .document-icon,
+.open-account-page .benefit-icon,
+.open-account-page .channel-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.open-account-page .document-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 16px;
+    border-radius: 10px;
+}
+
+.open-account-page .document-icon svg {
+    width: 24px;
+    height: 24px;
+    fill: none;
+    stroke-width: 1.9;
+}
+
+.open-account-page .document-card h4,
+.open-account-page .benefit-title {
+    margin: 0 0 10px;
+    font-size: 15.5px;
+    font-weight: 700;
+}
+
+.open-account-page .document-list {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.open-account-page .document-item {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+    font-size: 13px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.open-account-page .document-dot {
+    width: 5px;
+    height: 5px;
+    margin-top: 6px;
+    border-radius: 50%;
+    background: var(--oa-orange);
+    flex-shrink: 0;
+}
+
+.open-account-page .field-note {
+    display: block;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid var(--oa-border);
+    color: #bbb;
+    font-style: italic;
+}
+
+.open-account-page .benefits-section .section-title,
+.open-account-page .benefits-section .section-subtitle {
+    color: #fff;
+}
+
+.open-account-page .benefits-section .section-subtitle {
+    color: rgba(255, 255, 255, 0.66);
+}
+
+.open-account-page .benefit-card {
+    padding: 28px 24px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.open-account-page .benefit-card:hover {
+    background: rgba(255, 255, 255, 0.11);
+}
+
+.open-account-page .benefit-icon {
+    width: 46px;
+    height: 46px;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    background: rgba(245, 160, 32, 0.2);
+}
+
+.open-account-page .benefit-icon svg {
+    width: 22px;
+    height: 22px;
+    stroke: var(--oa-orange);
+}
+
+.open-account-page .benefit-title {
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.open-account-page .benefit-description {
+    color: rgba(255, 255, 255, 0.62);
+    font-size: 13.5px;
+    line-height: 1.65;
+}
+
+.open-account-page .appointment-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 72px;
+    align-items: start;
+}
+
+.open-account-page .appointment-card {
+    padding: 36px;
+    border: 1.5px solid var(--oa-border);
+    background: #fff;
+}
+
+.open-account-page .appointment-card h3 {
+    margin: 0 0 6px;
+    font-size: 20px;
+}
+
+.open-account-page .appointment-subtitle {
+    margin-bottom: 28px;
+    color: #888;
+    font-size: 13.5px;
+}
+
+.open-account-page .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.open-account-page .form-field input,
+.open-account-page .form-field select,
+.open-account-page .form-field textarea {
+    border: 1.5px solid var(--oa-border);
+    background: #fff;
+    color: var(--oa-text);
+}
+
+.open-account-page .form-field input:focus,
+.open-account-page .form-field select:focus,
+.open-account-page .form-field textarea:focus {
+    border-color: var(--oa-blue);
+    box-shadow: 0 0 0 3px rgba(26, 95, 168, 0.1);
+}
+
+.open-account-page .form-field textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+.open-account-page .submit-button {
+    width: 100%;
+    border: none;
+    padding: 14px;
+    margin-top: 8px;
+    font: inherit;
+    cursor: pointer;
+}
+
+.open-account-page .appointment-note {
+    margin-top: 10px;
+    text-align: center;
+    color: #bbb;
+}
+
+.open-account-page .success-message {
+    display: none;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.open-account-page .success-message.is-visible {
+    display: block;
+}
+
+.open-account-page .success-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 16px;
+    border-radius: 50%;
+    background: var(--oa-green-pale);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.open-account-page .success-icon svg {
+    width: 28px;
+    height: 28px;
+    stroke: var(--oa-green);
+    fill: none;
+    stroke-width: 2.5;
+}
+
+.open-account-page .success-message h4 {
+    margin: 0 0 8px;
+    color: var(--oa-green);
+    font-size: 19px;
+}
+
+.open-account-page .success-message p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+.open-account-page .appointment-why h3 {
+    margin: 0 0 14px;
+    font-size: clamp(20px, 2.5vw, 26px);
+    line-height: 1.25;
+}
+
+.open-account-page .appointment-why p {
+    margin: 0 0 36px;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.open-account-page .channel-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.open-account-page .channel-item {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid var(--oa-border);
+    background: var(--oa-off);
+    text-decoration: none;
+}
+
+.open-account-page .channel-item:hover {
+    background: var(--oa-blue-pale);
+    border-color: var(--oa-blue);
+}
+
+.open-account-page .channel-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 9px;
+    flex-shrink: 0;
+}
+
+.open-account-page .channel-icon svg {
+    width: 20px;
+    height: 20px;
+    fill: none;
+    stroke-width: 2;
+}
+
+.open-account-page .channel-title {
+    margin-bottom: 3px;
+    color: var(--oa-text);
+    font-size: 14.5px;
+    font-weight: 700;
+}
+
+.open-account-page .channel-description {
+    color: #888;
+    font-size: 13px;
+    line-height: 1.45;
+}
+
+.open-account-page .mini-faq-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.open-account-page .mini-faq-item {
+    overflow: hidden;
+    border: 1.5px solid var(--oa-border);
+    background: #fff;
+}
+
+.open-account-page .mini-faq-item:hover {
+    border-color: var(--oa-blue);
+}
+
+.open-account-page .mini-faq-question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 16px 18px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.open-account-page .mini-faq-chevron {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--oa-blue-pale);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.open-account-page .mini-faq-chevron svg {
+    width: 11px;
+    height: 11px;
+    stroke: var(--oa-blue);
+    transition:
+        transform 0.2s ease,
+        stroke 0.2s ease;
+}
+
+.open-account-page .mini-faq-item.is-open .mini-faq-chevron {
+    background: var(--oa-blue);
+}
+
+.open-account-page .mini-faq-item.is-open .mini-faq-chevron svg {
+    stroke: #fff;
+    transform: rotate(180deg);
+}
+
+.open-account-page .mini-faq-answer {
+    display: none;
+    padding: 0 18px 16px;
+    border-top: 1px solid var(--oa-border);
+    color: #666;
+    font-size: 13.5px;
+    line-height: 1.65;
+}
+
+.open-account-page .mini-faq-answer p {
+    padding-top: 14px;
+}
+
+.open-account-page .mini-faq-item.is-open .mini-faq-answer {
+    display: block;
+}
+
+.open-account-page .cta-section {
+    text-align: center;
+    background: var(--oa-blue);
+}
+
+.open-account-page .cta-title {
+    font-size: clamp(26px, 4vw, 46px);
+    color: #fff;
+    margin-bottom: 14px;
+}
+
+.open-account-page .cta-copy {
+    max-width: 520px;
+    margin: 0 auto 36px;
+    color: rgba(255, 255, 255, 0.68);
+    font-size: 16px;
+}
+
+.open-account-page .cta-buttons {
+    justify-content: center;
+}
+
+.open-account-page .cta-trust {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+    margin-top: 28px;
+    padding-top: 28px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.open-account-page .cta-trust-item {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 13px;
+}
+
+.open-account-page .cta-trust-item svg {
+    width: 14px;
+    height: 14px;
+    fill: none;
+    stroke: var(--oa-orange);
+    stroke-width: 2;
+}
+
+.open-account-page .reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition:
+        opacity 0.6s ease,
+        transform 0.6s ease;
+}
+
+.open-account-page .reveal.visible {
+    opacity: 1;
+    transform: none;
+}
+
+.sv-section {
+    margin-top: 5rem;
+    padding: 80px 5%;
+}
+
+.sv-related {
+    padding-top: 0;
+}
+
+.sv-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sv-kicker {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--sv-orange);
+    margin-bottom: 10px;
+}
+
+.sv-title {
+    font-size: clamp(26px, 3.4vw, 38px);
+    font-weight: 700;
+    color: var(--sv-dark);
+    line-height: 1.12;
+    margin-bottom: 14px;
+}
+
+.sv-title span {
+    color: var(--sv-blue);
+}
+
+.sv-related-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    margin-top: 26px;
+}
+
+.sv-related-card {
+    display: block;
+    text-decoration: none;
+    background: #fff;
+    border: 1.5px solid var(--sv-border);
+    border-radius: 14px;
+    padding: 18px;
+    transition:
+        border-color 0.2s,
+        transform 0.2s;
+}
+
+.sv-related-card:hover {
+    border-color: var(--sv-blue);
+    transform: translateY(-3px);
+}
+
+.sv-related-card h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--sv-dark);
+    margin-bottom: 6px;
+}
+
+.sv-related-card p {
+    font-size: 12px;
+    line-height: 1.55;
+    color: #666;
+}
+
+.sv-related-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--sv-blue);
+}
+
+.sv-related-link svg {
+    width: 12px;
+    height: 12px;
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 2.5;
+}
+
+/* Reveal animation */
+.sv-page .reveal {
+    opacity: 0;
+    transform: translateY(22px);
+    transition:
+        opacity 0.6s ease,
+        transform 0.6s ease;
+}
+
+.sv-page .reveal.visible {
+    opacity: 1;
+    transform: none;
+}
+
+.sv-page .d1 {
+    transition-delay: 0.08s;
+}
+.sv-page .d2 {
+    transition-delay: 0.16s;
+}
+.sv-page .d3 {
+    transition-delay: 0.24s;
+}
+.sv-page .d4 {
+    transition-delay: 0.32s;
+}
+
+/* Variables nécessaires */
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .sv-related-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .sv-related-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.open-account-page .delay-1 {
+    transition-delay: 0.1s;
+}
+.open-account-page .delay-2 {
+    transition-delay: 0.2s;
+}
+.open-account-page .delay-3 {
+    transition-delay: 0.3s;
+}
+.open-account-page .delay-4 {
+    transition-delay: 0.4s;
+}
+
+@media (max-width: 1024px) {
+    .open-account-page .hero-inner,
+    .open-account-page .account-panel.is-active,
+    .open-account-page .appointment-layout,
+    .open-account-page .docs-grid,
+    .open-account-page .benefits-grid,
+    .open-account-page .steps-grid,
+    .open-account-page .mini-faq-grid {
+        grid-template-columns: 1fr;
+        display: grid;
+    }
+}
+
+@media (max-width: 768px) {
+    .open-account-page .hero,
+    .open-account-page .accounts-section,
+    .open-account-page .steps-section,
+    .open-account-page .docs-section,
+    .open-account-page .benefits-section,
+    .open-account-page .appointment-section,
+    .open-account-page .faq-mini-section,
+    .open-account-page .cta-section,
+    .open-account-page .trust-band {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .open-account-page .form-row {
+        grid-template-columns: 1fr;
+    }
+}
