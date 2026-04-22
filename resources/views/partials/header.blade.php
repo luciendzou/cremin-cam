@@ -50,7 +50,7 @@
     <div class="nav-inner">
         <a href="{{ route('home') }}" class="nav-logo">
             <img
-                src="https://www.cremin-cam.org/images/logo/cremincam.png"
+                src="{{asset('logo/cremincam.png')}}"
                 alt="CREMIN-CAM"
                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
             >

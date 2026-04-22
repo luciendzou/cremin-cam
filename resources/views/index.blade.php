@@ -207,51 +207,6 @@
             </div>
         </section>
 
-        <section class="video-edu-section" style="padding: 100px 0; background: #f9f9f9;">
-            <div class="why-inner">
-                <div class="reveal" style="text-align: center; margin-bottom: 50px;">
-                    <div class="section-tag" style="justify-content: center; display: flex;">Média & Éducation</div>
-                    <h2 class="section-title">Comprendre la <span class="blue">Microfinance</span></h2>
-                    <p class="section-sub" style="margin: 0 auto;">Découvrez nos missions et l'impact de nos solutions à travers ces présentations vidéo.</p>
-                </div>
-
-                <div class="video-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 800px)); justify-content: center; gap: 30px;">
-                    <!-- Vidéo 1 -->
-                    <div class="reveal reveal-delay-1">
-                        <div class="video-card" style="border-radius: 20px; overflow: hidden; background: white; box-shadow: 0 20px 40px rgba(0,0,0,0.05); height: 100%;">
-                            <div style="position: relative; padding-bottom: 56.25%; height: 0;">
-                                <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
-                                    src="https://www.youtube.com/embed/yiY9H14d80w" 
-                                    title="YouTube video player" 
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                            <div style="padding: 25px;">
-                                <h3 style="font-size: 1.2rem; color: #0f3d72; margin-bottom: 10px; font-weight: 700;">Le rôle de CREMIN-CAM</h3>
-                                <p style="font-size: 0.95rem; color: #666; line-height: 1.6;">Découvrez notre vision pour le développement local et l'inclusion financière au Cameroun.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Vidéo 2 -->
-                    {{-- 
-                    <div class="reveal reveal-delay-2">
-                        <div class="video-card" style="border-radius: 20px; overflow: hidden; background: white; box-shadow: 0 20px 40px rgba(0,0,0,0.05); height: 100%;">
-                            <div style="position: relative; padding-bottom: 56.25%; height: 0;">
-                                <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
-                                    src="https://www.youtube.com/embed/3qndnqsImqw" 
-                                    title="YouTube video player" 
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                            <div style="padding: 25px;">
-                                <h3 style="font-size: 1.2rem; color: #0f3d72; margin-bottom: 10px; font-weight: 700;">Why choose CREMIN-CAM? (EN)</h3>
-                                <p style="font-size: 0.95rem; color: #666; line-height: 1.6;">Learn about the benefits of local microfinance to support your life projects with peace of mind in English.</p>
-                            </div>
-                        </div>
-                    </div>
-                    --}}
-                </div>
-            </div>
-        </section>
 
         <section class="partners-section">
             <div class="reveal">
