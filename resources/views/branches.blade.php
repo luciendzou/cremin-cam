@@ -119,7 +119,7 @@
             <div class="map-wrap reveal">
                 <div class="map-card">
                     <div class="map-title">Réseau CREMIN-CAM</div>
-                    <div class="map-sub">Présence nationale au Cameroun</div>
+                    <div class="map-sub">Carte du Cameroun - présence nationale CREMIN-CAM</div>
                     <div class="map-svg-wrap">
                         <svg viewBox="0 0 320 420" width="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                             <defs>
@@ -213,14 +213,14 @@
                                             <div class="ainfo-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
                                             <div>
                                                 <div class="ainfo-label">Adresse</div>
-                                                <div class="ainfo-val">Face Camp SIC<br>Messa-Mokolo, Yaoundé</div>
+                                                <div class="ainfo-val">Face Camp Sic Messa<br>Immeuble de la Solidarité, Yaoundé</div>
                                             </div>
                                         </div>
                                         <div class="ainfo">
                                             <div class="ainfo-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81"/></svg></div>
                                             <div>
                                                 <div class="ainfo-label">Téléphone</div>
-                                                <div class="ainfo-val"><a href="tel:+237656851262">(+237) 656 85 12 62</a></div>
+                                                <div class="ainfo-val"><a href="tel:+237656851262">(+237) 656 85 12 62</a><br><a href="tel:+237222235380">(+237) 222 23 53 80</a></div>
                                             </div>
                                         </div>
                                         <div class="ainfo">
@@ -240,8 +240,8 @@
                                     </div>
                                 </div>
                                 <div class="agency-card-footer">
-                                    <div class="hours-row"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Lun-Ven : 8h-17h | Sam : 8h-13h</div>
-                                    <a href="https://maps.google.com/?q=Messa-Mokolo+Yaounde+Cameroun" target="_blank" rel="noopener noreferrer" class="btn-itineraire"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10"/></svg>Itinéraire</a>
+                                    <div class="hours-row"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Lun-Ven : 8h00-16h30 | Sam : 9h30-13h00</div>
+                                    <a href="https://maps.google.com/?q=Face+Camp+Sic+Messa+Immeuble+de+la+Solidarite+Yaounde+Cameroun" target="_blank" rel="noopener noreferrer" class="btn-itineraire"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10"/></svg>Itinéraire</a>
                                 </div>
                             </div>
                         </div>
@@ -268,7 +268,7 @@
                                             <div class="ainfo-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
                                             <div>
                                                 <div class="ainfo-label">Adresse</div>
-                                                <div class="ainfo-val">Akwa, Douala<br>Région du Littoral</div>
+                                                <div class="ainfo-val">Akwa, face Restaurant White House<br>Douala</div>
                                             </div>
                                         </div>
                                         <div class="ainfo">
@@ -295,8 +295,8 @@
                                     </div>
                                 </div>
                                 <div class="agency-card-footer">
-                                    <div class="hours-row"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Lun-Ven : 8h-17h | Sam : 8h-13h</div>
-                                    <a href="https://maps.google.com/?q=Akwa+Douala+Cameroun" target="_blank" rel="noopener noreferrer" class="btn-itineraire"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10"/></svg>Itinéraire</a>
+                                    <div class="hours-row"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Lun-Ven : 8h00-16h30 | Sam : 9h30-13h00</div>
+                                    <a href="https://maps.google.com/?q=Akwa+face+Restaurant+White+House+Douala+Cameroun" target="_blank" rel="noopener noreferrer" class="btn-itineraire"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10"/></svg>Itinéraire</a>
                                 </div>
                             </div>
 
@@ -321,7 +321,7 @@
                                             <div class="ainfo-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81"/></svg></div>
                                             <div>
                                                 <div class="ainfo-label">Téléphone</div>
-                                                <div class="ainfo-val"><a href="tel:+237655717386">(+237) 655 71 73 86</a></div>
+                                                <div class="ainfo-val"><a href="tel:+237699171608">(+237) 699 17 16 08</a></div>
                                             </div>
                                         </div>
                                         <div class="ainfo">
@@ -334,8 +334,8 @@
                                     </div>
                                 </div>
                                 <div class="agency-card-footer">
-                                    <div class="hours-row"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Lun-Ven : 8h-16h | Sam : 8h-12h</div>
-                                    <a href="https://maps.google.com/?q=Nkongsamba+Cameroun" target="_blank" rel="noopener noreferrer" class="btn-itineraire"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10"/></svg>Itinéraire</a>
+                                    <div class="hours-row"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Lun-Ven : 8h00-16h30 | Sam : 9h30-13h00</div>
+                                    <a href="https://maps.google.com/?q=Face+Congelcam+Immeuble+La+Sabine+Nkongsamba+Cameroun" target="_blank" rel="noopener noreferrer" class="btn-itineraire"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10"/></svg>Itinéraire</a>
                                 </div>
                             </div>
                         </div>
@@ -357,15 +357,15 @@
                                 </div>
                                 <div class="agency-card-body">
                                     <div class="agency-info-grid">
-                                        <div class="ainfo"><div class="ainfo-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><div class="ainfo-label">Adresse</div><div class="ainfo-val">Garoua<br>Région du Nord</div></div></div>
-                                        <div class="ainfo"><div class="ainfo-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81"/></svg></div><div><div class="ainfo-label">Téléphone</div><div class="ainfo-val"><a href="tel:+237697046925">(+237) 697 04 69 25</a></div></div></div>
+                                        <div class="ainfo"><div class="ainfo-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><div class="ainfo-label">Adresse</div><div class="ainfo-val">Avenue des Banques<br>Face ECOBANK, Garoua</div></div></div>
+                                        <div class="ainfo"><div class="ainfo-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81"/></svg></div><div><div class="ainfo-label">Téléphone</div><div class="ainfo-val"><a href="tel:+237699460881">(+237) 699 46 08 81</a></div></div></div>
                                         <div class="ainfo"><div class="ainfo-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div><div class="ainfo-label">Email</div><div class="ainfo-val"><a href="mailto:info.cremincamgaroua@cremincam.com">info.cremincamgaroua<br>@cremincam.com</a></div></div></div>
                                         <div class="ainfo"><div class="ainfo-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg></div><div><div class="ainfo-label">Services disponibles</div><div class="ainfo-val">Tous les services<br>+ Financement agricole</div></div></div>
                                     </div>
                                 </div>
                                 <div class="agency-card-footer">
-                                    <div class="hours-row"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Lun-Ven : 8h-17h | Sam : 8h-13h</div>
-                                    <a href="https://maps.google.com/?q=Garoua+Cameroun" target="_blank" rel="noopener noreferrer" class="btn-itineraire"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10"/></svg>Itinéraire</a>
+                                    <div class="hours-row"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Lun-Ven : 8h00-16h30 | Sam : 9h30-13h00</div>
+                                    <a href="https://maps.google.com/?q=Avenue+des+Banques+face+ECOBANK+Garoua+Cameroun" target="_blank" rel="noopener noreferrer" class="btn-itineraire"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10"/></svg>Itinéraire</a>
                                 </div>
                             </div>
                         </div>
@@ -388,14 +388,14 @@
                                 </div>
                                 <div class="agency-card-body">
                                     <div class="agency-info-grid">
-                                        <div class="ainfo"><div class="ainfo-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><div class="ainfo-label">Adresse</div><div class="ainfo-val">Domayo, Carrefour<br>Foyer des Jeunes, Maroua</div></div></div>
+                                        <div class="ainfo"><div class="ainfo-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><div class="ainfo-label">Adresse</div><div class="ainfo-val">Domaya<br>Derrière CAMAIR CO, Maroua</div></div></div>
                                         <div class="ainfo"><div class="ainfo-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81"/></svg></div><div><div class="ainfo-label">Téléphone</div><div class="ainfo-val"><a href="tel:+237675427522">(+237) 675 42 75 22</a></div></div></div>
                                         <div class="ainfo"><div class="ainfo-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg></div><div><div class="ainfo-label">Services disponibles</div><div class="ainfo-val">Dépôts, retraits<br>Épargne, Renseignements</div></div></div>
                                     </div>
                                 </div>
                                 <div class="agency-card-footer">
-                                    <div class="hours-row"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Lun-Ven : 8h-16h | Sam : 8h-12h</div>
-                                    <a href="https://maps.google.com/?q=Maroua+Cameroun" target="_blank" rel="noopener noreferrer" class="btn-itineraire"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10"/></svg>Itinéraire</a>
+                                    <div class="hours-row"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Lun-Ven : 8h00-16h30 | Sam : 9h30-13h00</div>
+                                    <a href="https://maps.google.com/?q=Domaya+Derriere+CAMAIR+CO+Maroua+Cameroun" target="_blank" rel="noopener noreferrer" class="btn-itineraire"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10"/></svg>Itinéraire</a>
                                 </div>
                             </div>
                         </div>
@@ -411,7 +411,7 @@
                     <div class="find-title">Plusieurs façons<br>de nous <span>contacter</span></div>
                     <p class="find-copy">Vous préférez appeler, écrire ou vous déplacer - nous sommes disponibles sur tous les canaux pour vous accompagner.</p>
                     <div class="find-ways">
-                        <div class="find-way"><div class="fw-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 14.92z"/></svg></div><div><div class="fw-title">Par téléphone</div><div class="fw-desc">Appelez le <strong>(+237) 697 04 69 25</strong> - disponible pendant les heures d'ouverture.</div></div></div>
+                        <div class="find-way"><div class="fw-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 14.92z"/></svg></div><div><div class="fw-title">Par téléphone</div><div class="fw-desc">Appelez le <strong>(+237) 222 23 53 80</strong> ou le <strong>(+237) 656 85 12 62</strong> pendant les heures d'ouverture.</div></div></div>
                         <div class="find-way"><div class="fw-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div><div class="fw-title">Par email</div><div class="fw-desc">Écrivez-nous à <strong>info.cremincam@cremincam.com</strong> - réponse sous 24h ouvrables.</div></div></div>
                         <div class="find-way"><div class="fw-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg></div><div><div class="fw-title">Via l'application SOLO</div><div class="fw-desc">Gérez tout depuis votre smartphone - disponible sur Android, sans file d'attente.</div></div></div>
                     </div>
@@ -422,11 +422,11 @@
                     <p class="find-side-copy">Utilisez les onglets ci-dessus pour filtrer par région et trouver l'agence ou le guichet le plus proche de chez vous.</p>
                     <div class="hours-box">
                         <div class="hours-title">Horaires généraux</div>
-                        <div class="hours-line"><span>Lundi - Vendredi</span><strong>8h00 - 17h00</strong></div>
-                        <div class="hours-line"><span>Samedi</span><strong>8h00 - 13h00</strong></div>
+                        <div class="hours-line"><span>Lundi - Vendredi</span><strong>8h00 - 16h30</strong></div>
+                        <div class="hours-line"><span>Samedi</span><strong>9h30 - 13h00</strong></div>
                         <div class="hours-line closed"><span>Dimanche &amp; Fériés</span><strong>Fermé</strong></div>
                     </div>
-                    <a href="tel:+237697046925" class="call-now">Appeler maintenant</a>
+                    <a href="tel:+237222235380" class="call-now">Appeler maintenant</a>
                 </div>
             </div>
         </section>

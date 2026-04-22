@@ -136,6 +136,23 @@
     margin-bottom: 36px;
 }
 
+.contact-page .faq-section-action {
+    display: flex;
+    justify-content: center;
+    margin-top: -8px;
+    margin-bottom: 10px;
+}
+
+.contact-page .faq-section-action .btn-map {
+    background: #fff;
+    color: var(--contact-blue);
+    border: 1px solid var(--contact-blue);
+}
+
+.contact-page .faq-section-action .btn-map:hover {
+    background: rgba(26, 95, 168, 0.08);
+}
+
 .contact-page .quick-links {
     display: flex;
     flex-direction: column;
@@ -172,6 +189,57 @@
 
 .contact-page .quick-link:hover {
     background: rgba(255, 255, 255, 0.16);
+}
+
+.contact-page .contact-collapse {
+    overflow: hidden;
+}
+
+.contact-page .contact-collapse-toggle {
+    width: 100%;
+    border: 0;
+    background: transparent;
+    padding: 18px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.contact-page .contact-collapse-body {
+    padding: 0 22px 22px;
+    display: none;
+}
+
+.contact-page .contact-collapse.is-open .contact-collapse-body {
+    display: block;
+}
+
+.contact-page .contact-collapse-chevron {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid var(--contact-border);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.contact-page .contact-collapse-chevron svg {
+    width: 16px;
+    height: 16px;
+    stroke: var(--contact-blue);
+    stroke-width: 1.9;
+    fill: none;
+}
+
+.contact-page .contact-collapse.is-open .contact-collapse-chevron {
+    transform: rotate(180deg);
+    background: rgba(26, 95, 168, 0.06);
 }
 
 .contact-page .icon-box,
@@ -224,22 +292,43 @@
 
 .contact-page .response-inner {
     padding: 20px 5%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px 40px;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+    align-items: stretch;
 }
 
 .contact-page .response-item {
     display: flex;
-    align-items: center;
-    gap: 10px;
+    align-items: flex-start;
+    gap: 12px;
     font-size: 13px;
     color: #666;
+    background: #fff;
+    border: 1px solid var(--contact-border);
+    border-radius: 14px;
+    padding: 16px 18px;
+    min-height: 76px;
+}
+
+.contact-page .response-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.contact-page .response-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    color: #8a8a8a;
 }
 
 .contact-page .response-item strong {
     color: var(--contact-text);
+    font-size: 14px;
+    line-height: 1.45;
 }
 
 .contact-page .response-dot,
@@ -249,6 +338,10 @@
     height: 8px;
     border-radius: 50%;
     flex-shrink: 0;
+}
+
+.contact-page .response-dot {
+    margin-top: 7px;
 }
 
 .contact-page .main {
@@ -502,14 +595,11 @@
     gap: 18px;
 }
 
-.contact-page .info-card {
-    overflow: hidden;
-}
-
 .contact-page .info-header {
-    padding: 20px 22px;
-    background: var(--contact-blue);
-    color: #fff;
+    padding: 0;
+    background: transparent;
+    color: var(--contact-text);
+    flex: 1;
 }
 
 .contact-page .info-header-title {
@@ -519,13 +609,10 @@
 
 .contact-page .info-header-subtitle {
     font-size: 11.5px;
-    color: rgba(255, 255, 255, 0.65);
+    color: #7a8aa0;
     margin-top: 2px;
 }
 
-.contact-page .info-body,
-.contact-page .hours-card,
-.contact-page .branch-card,
 .contact-page .solo-card {
     padding: 22px;
 }
@@ -581,7 +668,6 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    margin-bottom: 14px;
     font-size: 13px;
     font-weight: 700;
 }
@@ -961,6 +1047,10 @@
 }
 
 @media (max-width: 1024px) {
+    .contact-page .response-inner {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
     .contact-page .hero-inner,
     .contact-page .main,
     .contact-page .map-layout,
@@ -1002,6 +1092,7 @@
     }
 
     .contact-page .response-inner {
+        grid-template-columns: 1fr;
         padding-left: 20px;
         padding-right: 20px;
     }

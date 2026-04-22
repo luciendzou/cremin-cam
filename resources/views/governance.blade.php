@@ -59,7 +59,7 @@
                         <div class="gov-role">Directrice Générale Adjointe</div>
                     </div>
                     <div class="gov-card-body">
-                        <p>Directrice Générale Adjointe, elle supervise la gestion opérationnelle des agences, les relations avec les membres et la qualité de service. Elle veille à l'application des politiques internes et au développement des équipes.</p>
+                        <p>Directeur Général Adjoint, il supervise la gestion opérationnelle des agences, les relations avec les membres et la qualité de service. Il veille à l'application des politiques internes et au développement des équipes.</p>
                     </div>
                 </div>
             </div>
