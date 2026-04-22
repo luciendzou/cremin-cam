@@ -56,7 +56,7 @@
                     <div class="gov-card-header" style="background:linear-gradient(135deg,var(--blue),var(--bdark))">
                         <div class="gov-avatar"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
                         <div class="gov-name">VALENTINE OKALE DANG</div>
-                        <div class="gov-role">Directrice Générale Adjointe</div>
+                        <div class="gov-role">Directeur Général Adjoint</div>
                     </div>
                     <div class="gov-card-body">
                         <p>Directeur Général Adjoint, il supervise la gestion opérationnelle des agences, les relations avec les membres et la qualité de service. Il veille à l'application des politiques internes et au développement des équipes.</p>
