@@ -27,7 +27,7 @@
         <div class="services-intro">
             <div class="reveal">
                 <div class="section-tag">Nos services bancaires</div>
-                <h2 class="section-title">8 services pour <span class="bl">aller plus loin</span></h2>
+                <h2 class="section-title">9 services pour <span class="bl">aller plus loin</span></h2>
                 <p class="section-sub" style="margin-bottom:48px">Des services complémentaires pour encaisser, transférer, recevoir des alertes, protéger vos activités et fluidifier vos opérations au quotidien.</p>
             </div>
         </div>
@@ -42,7 +42,7 @@
                         </div>
                         <div class="svc-title">{{ $s['title'] }}</div>
                         <div class="svc-desc">{{ $s['hook'] }}</div>
-                        <a href="{{ route('services.show', $slug) }}" class="svc-link">
+                        <a href="{{ $s['url'] ?? route('services.show', $slug) }}" class="svc-link">
                             En savoir plus 
                             <svg viewBox="0 0 14 14"><path d="M1 7h12M8 3l5 4-5 4"></path></svg>
                         </a>

@@ -81,7 +81,7 @@
                     <a href="{{ route('history') }}">Notre histoire</a>
                     <a href="{{ route('governance') }}">Nos organes</a>
                     <a href="#">L'équipe</a>
-                    <a href="#">Carrières</a>
+                    <a href="{{ route('careers') }}">Carrières</a>
                 </div>
             </div>
             <a href="{{ route('contact') }}">Contacts</a>

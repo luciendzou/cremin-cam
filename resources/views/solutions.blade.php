@@ -27,7 +27,7 @@
         <section class="products-section">
             <div class="reveal">
                 <div class="section-tag">Nos solutions bancaires</div>
-                <h2 class="section-title">5 solutions, <span class="bl">une seule mission</span></h2>
+                <h2 class="section-title">4 solutions, <span class="bl">une seule mission</span></h2>
                 <p class="section-sub">Chaque solution répond à un besoin précis : gérer votre argent, épargner, payer ou accéder à une offre bancaire adaptée à votre réalité.</p>
             </div>
 
@@ -71,17 +71,6 @@
                         <a href="{{ route('open-account') }}" class="prod-card-link">Ouvrir un compte <svg viewBox="0 0 14 14"><path d="M1 7h12M8 3l5 4-5 4"></path></svg></a>
                     </div>
                 </div>
-
-                <div class="prod-card reveal d5">
-                    <div class="prod-card-img"><img src="{{ asset('products/product-7.png') }}" alt="Crédits Bancaires"></div>
-                    <div class="prod-card-body">
-                        <div class="prod-icon-chip"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2z"></path><path d="M12 7v10M8.5 10.5c0-1.4 1.4-2.5 3.5-2.5s3.5 1.1 3.5 2.5-1.4 2.5-3.5 2.5-3.5 1.1-3.5 2.5S9.9 18 12 18s3.5-1.1 3.5-2.5"></path></svg></div>
-                        <div class="prod-card-title">Crédits Bancaires</div>
-                        <div class="prod-card-desc">Financez vos besoins personnels, familiaux ou professionnels avec des solutions de crédit adaptées à votre profil.</div>
-                        <a href="{{ route('solutions.credits') }}" class="prod-card-link">Demander un crédit <svg viewBox="0 0 14 14"><path d="M1 7h12M8 3l5 4-5 4"></path></svg></a>
-                    </div>
-                </div>
-
             </div>
         </section>
 

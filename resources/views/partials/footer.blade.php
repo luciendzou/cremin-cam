@@ -29,6 +29,7 @@
                 <a href="{{ route('about') }}">À propos</a>
                 <a href="{{ route('history') }}">Notre histoire</a>
                 <a href="{{ route('governance') }}">Nos organes</a>
+                <a href="{{ route('careers') }}">Carrières</a>
                 <a href="{{ route('open-account') }}">Ouvrir un compte</a>
             </div>
 

@@ -165,6 +165,25 @@ function getServicesData() {
                 'Orientation, réponse ou redirection vers le bon interlocuteur.',
             ],
         ],
+        'credits-bancaires' => [
+            'title' => 'Credits bancaires',
+            'tag' => 'Service 09',
+            'icon' => '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2z"></path><path d="M12 7v10M8.5 10.5c0-1.4 1.4-2.5 3.5-2.5s3.5 1.1 3.5 2.5-1.4 2.5-3.5 2.5-3.5 1.1-3.5 2.5S9.9 18 12 18s3.5-1.1 3.5-2.5"></path></svg>',
+            'hook' => 'Des solutions de credit adaptees a vos besoins personnels et professionnels.',
+            'description' => "Financez vos projets, vos besoins de tresorerie ou vos investissements avec des solutions de credit pensees pour votre profil et votre realite.",
+            'highlights' => ['Besoins personnels', 'Besoins professionnels', 'Accompagnement conseiller'],
+            'benefits' => [
+                'Solutions de financement adaptees a votre capacite de remboursement.',
+                'Accompagnement dans la constitution du dossier et le choix de la formule.',
+                'Orientation vers le type de credit le plus pertinent selon votre besoin.',
+            ],
+            'steps' => [
+                'Expression du besoin de financement avec un conseiller.',
+                'Constitution et verification du dossier de demande.',
+                'Etude, decision et mise en place de la solution retenue.',
+            ],
+            'url' => route('solutions.credits'),
+        ],
     ];
 }
 
@@ -193,6 +212,7 @@ Route::view('/agences', 'branches')->name('branches');
 Route::view('/a-propos', 'about')->name('about');
 Route::view('/notre-histoire', 'history')->name('history');
 Route::view('/nos-organes', 'governance')->name('governance');
+Route::view('/carrieres', 'careers')->name('careers');
 Route::view('/contact', 'contact')->name('contact');
 Route::view('/faq', 'faq')->name('faq');
 Route::view('/ouvrir-un-compte', 'solutions.open-account')->name('open-account');
