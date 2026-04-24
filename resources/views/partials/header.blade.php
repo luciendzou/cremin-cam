@@ -50,7 +50,7 @@
     <div class="nav-inner">
         <a href="{{ route('home') }}" class="nav-logo">
             <img
-                src="{{asset('logo/cremincam.png')}}"
+                src="{{ asset('logo/cremincam.png') }}"
                 alt="CREMIN-CAM"
                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
             >
@@ -64,29 +64,43 @@
             </span>
         </a>
 
-        <div class="nav-links">
-            <a href="{{ route('solutions') }}">Solutions</a>
-            <a href="{{ route('services') }}">Services</a>
-            <a href="{{ route('projects') }}">Projets</a>
-            <a href="{{ route('branches') }}">Agences</a>
-            <div class="nav-dropdown">
-                <button type="button" class="nav-dropdown-toggle" aria-haspopup="true">
-                    Microfinance
-                    <svg viewBox="0 0 12 12" aria-hidden="true">
-                        <path d="M2 4l4 4 4-4" />
-                    </svg>
-                </button>
-                <div class="nav-dropdown-menu">
-                    <a href="{{ route('about') }}">À propos</a>
-                    <a href="{{ route('history') }}">Notre histoire</a>
-                    <a href="{{ route('governance') }}">Nos organes</a>
-                    <a href="#">L'équipe</a>
-                    <a href="{{ route('careers') }}">Carrières</a>
-                </div>
-            </div>
-            <a href="{{ route('contact') }}">Contacts</a>
-        </div>
+        <button
+            type="button"
+            class="nav-toggle"
+            aria-expanded="false"
+            aria-controls="site-nav-panel"
+            aria-label="Ouvrir le menu"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
 
-        <a href="{{ route('open-account') }}" class="nav-cta">Ouvrir un compte</a>
+        <div class="nav-panel" id="site-nav-panel">
+            <div class="nav-links">
+                <a href="{{ route('solutions') }}">Solutions</a>
+                <a href="{{ route('services') }}">Services</a>
+                <a href="{{ route('projects') }}">Projets</a>
+                <a href="{{ route('branches') }}">Agences</a>
+                <div class="nav-dropdown">
+                    <button type="button" class="nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                        Microfinance
+                        <svg viewBox="0 0 12 12" aria-hidden="true">
+                            <path d="M2 4l4 4 4-4" />
+                        </svg>
+                    </button>
+                    <div class="nav-dropdown-menu">
+                        <a href="{{ route('about') }}">A propos</a>
+                        <a href="{{ route('history') }}">Notre histoire</a>
+                        <a href="{{ route('governance') }}">Nos organes</a>
+                        <a href="{{ route('team') }}">L'equipe</a>
+                        <a href="{{ route('careers') }}">Carrieres</a>
+                    </div>
+                </div>
+                <a href="{{ route('contact') }}">Contacts</a>
+            </div>
+
+            <a href="{{ route('open-account') }}" class="nav-cta">Ouvrir un compte</a>
+        </div>
     </div>
 </nav>

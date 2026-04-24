@@ -42,6 +42,10 @@
   display: block;
 }
 
+.mt-4 {
+  margin-top: 3rem;
+}
+
 .about-page .hero::before,
 .about-page .hero::after {
   content: "";
@@ -377,7 +381,7 @@
 .about-page .gov-card {
   background: #fff;
   border: 1.5px solid var(--border);
-  border-radius: 16px;
+  border-radius: 6px;
   transition: border-color .25s, transform .25s, box-shadow .25s;
   position: relative;
   overflow: hidden;
@@ -402,7 +406,6 @@
 .about-page .mv-card.engagement::before { background: var(--green); }
 
 .about-page .mv-card:hover,
-.about-page .gov-card:hover,
 .about-page .vcard:hover {
   transform: translateY(-5px);
   box-shadow: 0 16px 40px rgba(0, 0, 0, .08);
@@ -478,6 +481,10 @@
   margin-top: 52px;
 }
 
+.about-page .team-posts-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .about-page .vcard {
   background: #fff;
   border: 1.5px solid var(--border);
@@ -516,6 +523,255 @@
 }
 
 .about-page .vcard-desc { font-size: 13.5px; }
+
+.about-page .careers-accordion-section {
+  padding-bottom: 96px;
+}
+
+.about-page .career-accordion {
+  margin-top: 52px;
+  display: grid;
+  gap: 18px;
+}
+
+.about-page .career-panel {
+  background: #fff;
+  border: 1.5px solid var(--border);
+  border-radius: 18px;
+  overflow: hidden;
+  transition: box-shadow .25s, transform .25s, border-color .25s;
+}
+
+.about-page .career-panel:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, .07);
+}
+
+.about-page .career-panel.is-open {
+  border-color: rgba(26, 95, 168, .25);
+  box-shadow: 0 18px 42px rgba(15, 61, 114, .08);
+}
+
+.about-page .career-panel-toggle {
+  width: 100%;
+  border: 0;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 26px 28px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.about-page .career-panel-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.about-page .career-panel-num {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: var(--bpale);
+  color: var(--blue);
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.about-page .career-panel-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 6px;
+}
+
+.about-page .career-panel-summary {
+  font-size: 14px;
+  color: #667085;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.about-page .career-panel-chevron {
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform .22s ease, border-color .22s ease, background .22s ease;
+}
+
+.about-page .career-panel-chevron svg {
+  width: 18px;
+  height: 18px;
+  stroke: var(--blue);
+  fill: none;
+  stroke-width: 2;
+}
+
+.about-page .career-panel.is-open .career-panel-chevron {
+  transform: rotate(180deg);
+  border-color: rgba(26, 95, 168, .24);
+  background: var(--bpale);
+}
+
+.about-page .career-panel-body {
+  display: none;
+  padding: 0 28px 28px;
+  border-top: 1px solid #edf2f7;
+}
+
+.about-page .career-panel.is-open .career-panel-body {
+  display: block;
+}
+
+.about-page .career-docs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  padding-top: 24px;
+}
+
+.about-page .career-doc-card {
+  background: var(--off);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 22px 22px 20px;
+}
+
+.about-page .career-doc-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 12px;
+}
+
+.about-page .career-doc-list {
+  margin: 0;
+  padding-left: 18px;
+  color: #555;
+}
+
+.about-page .career-doc-list li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.about-page .career-doc-list li:last-child {
+  margin-bottom: 0;
+}
+
+.about-page .career-empty-state {
+  padding-top: 24px;
+}
+
+.about-page .career-empty-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 8px;
+}
+
+.about-page .career-empty-copy {
+  max-width: 720px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #666;
+  margin: 0;
+}
+
+.about-page .career-form {
+  padding-top: 24px;
+}
+
+.about-page .career-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.about-page .career-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.about-page .career-field label {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--dark);
+}
+
+.about-page .career-field label span {
+  color: #d14343;
+}
+
+.about-page .career-field input,
+.about-page .career-field select,
+.about-page .career-field textarea {
+  width: 100%;
+  border: 1px solid #d9e2ec;
+  border-radius: 10px;
+  background: #fff;
+  color: var(--dark);
+  padding: 13px 14px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+.about-page .career-field input:focus,
+.about-page .career-field select:focus,
+.about-page .career-field textarea:focus {
+  border-color: rgba(26, 95, 168, .5);
+  box-shadow: 0 0 0 4px rgba(26, 95, 168, .08);
+}
+
+.about-page .career-field textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.about-page .career-form-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+
+.about-page .career-form-note {
+  font-size: 13px;
+  line-height: 1.65;
+  color: #667085;
+  margin: 16px 0 0;
+}
+
+.about-page .career-form-success {
+  display: none;
+  margin-top: 18px;
+  padding: 14px 16px;
+  background: var(--gpale);
+  color: var(--green);
+  border: 1px solid rgba(30, 107, 69, .18);
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.about-page .career-form-success.is-visible {
+  display: block;
+}
 
 .about-page .timeline {
   position: relative;
@@ -581,6 +837,10 @@
 .about-page .gov-grid,
 .about-page .compliance-grid {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.about-page .leaders-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .about-page .gov-card-header {
@@ -651,6 +911,492 @@
 .about-page .gov-card-body p,
 .about-page .comp-val {
   font-size: 13.5px;
+}
+
+.about-page .leader-photo {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: #eef4fb;
+  border-bottom: 1px solid var(--border);
+}
+
+.about-page .leader-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.about-page .leader-card-body {
+  padding: 22px 14px 24px;
+}
+
+.about-page .leader-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 6px;
+}
+
+.about-page .leader-role {
+  font-size: 13px;
+  color: #8a8f98;
+  margin-bottom: 14px;
+}
+
+.about-page .leader-copy {
+  font-size: 13.5px;
+  color: #666;
+  line-height: 1.68;
+  margin: 0;
+}
+
+.about-page .team-chart-wrap {
+  margin-top: 52px;
+  background: #fff;
+  border: 1.5px solid var(--border);
+  border-radius: 24px;
+  padding: 18px;
+  overflow-x: auto;
+  box-shadow: 0 18px 44px rgba(15, 61, 114, .06);
+}
+
+.about-page .team-chart-svg {
+  display: block;
+  width: 100%;
+  min-width: 1280px;
+  height: auto;
+}
+
+.about-page .org-frame {
+  margin-top: 52px;
+}
+
+.about-page .org-collapse {
+  background: #fff;
+  border: 1.5px solid var(--border);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 18px 44px rgba(15, 61, 114, .06);
+}
+
+.about-page .org-collapse-toggle {
+  width: 100%;
+  border: 0;
+  background: #fff;
+  padding: 22px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.about-page .org-collapse-copy {
+  min-width: 0;
+}
+
+.about-page .org-collapse-kicker {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin-bottom: 6px;
+}
+
+.about-page .org-collapse-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--dark);
+  line-height: 1.25;
+}
+
+.about-page .org-collapse-chevron {
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform .22s ease, background .22s ease, border-color .22s ease;
+}
+
+.about-page .org-collapse-chevron svg {
+  width: 18px;
+  height: 18px;
+  stroke: var(--blue);
+  fill: none;
+  stroke-width: 2;
+}
+
+.about-page .org-collapse.is-open .org-collapse-chevron {
+  transform: rotate(180deg);
+  background: var(--bpale);
+  border-color: rgba(26, 95, 168, .2);
+}
+
+.about-page .org-collapse-body {
+  display: none;
+  border-top: 1px solid var(--border);
+}
+
+.about-page .org-collapse.is-open .org-collapse-body {
+  display: block;
+}
+
+.about-page .org-sheet {
+  background: #fff;
+  overflow: hidden;
+}
+
+.about-page .org-header {
+  background: var(--bdark);
+  padding: 28px 34px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-bottom: 3px solid var(--orange);
+}
+
+.about-page .org-hd-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, .1);
+  border: 1.5px solid rgba(255, 255, 255, .18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.about-page .org-hd-icon svg {
+  width: 22px;
+  height: 22px;
+  stroke: var(--orange);
+  fill: none;
+  stroke-width: 2;
+}
+
+.about-page .org-hd-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.about-page .org-hd-sub {
+  font-size: 11px;
+  letter-spacing: .7px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, .55);
+  margin-top: 3px;
+}
+
+.about-page .org-hd-sub span {
+  color: var(--orange);
+}
+
+.about-page .org-chart-outer {
+  overflow-x: auto;
+  padding: 34px 22px 26px;
+}
+
+.about-page .org-chart {
+  width: 1120px;
+  min-height: 860px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.about-page .org-svg {
+  position: absolute;
+  inset: 0;
+  width: 1120px;
+  height: 860px;
+  pointer-events: none;
+}
+
+.about-page .org-line {
+  stroke: #b8d0eb;
+  stroke-width: 2.5;
+  fill: none;
+}
+
+.about-page .org-node {
+  position: absolute;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform .22s ease, box-shadow .22s ease;
+}
+
+.about-page .org-node:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(26, 95, 168, .14);
+}
+
+.about-page .org-supreme {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 260px;
+  padding: 14px 22px;
+  background: var(--bdark);
+  border: 2px solid var(--orange);
+}
+
+.about-page .org-gov {
+  min-width: 210px;
+  padding: 12px 18px;
+  background: var(--blue);
+  border: 1.5px solid var(--bl);
+}
+
+.about-page .org-cs {
+  top: 130px;
+  left: 190px;
+}
+
+.about-page .org-ca {
+  top: 130px;
+  left: 450px;
+}
+
+.about-page .org-dir {
+  min-width: 215px;
+  padding: 12px 18px;
+  background: var(--bpale);
+  border: 1.5px solid var(--border);
+}
+
+.about-page .org-row-dg .org-dir {
+  top: 225px;
+  left: 452px;
+}
+
+.about-page .org-row-dga .org-dir {
+  top: 360px;
+  left: 445px;
+}
+
+.about-page .org-dept {
+  min-width: 110px;
+  padding: 10px 14px;
+  background: #fff;
+  border: 1.5px solid var(--border);
+  box-shadow: 0 2px 10px rgba(26, 95, 168, .07);
+}
+
+.about-page .org-pos-cai {
+  top: 490px;
+  left: 10px;
+  min-width: 185px;
+  border-left: 3px solid var(--orange);
+}
+
+.about-page .org-pos-dafc {
+  top: 490px;
+  left: 375px;
+}
+
+.about-page .org-pos-cj {
+  top: 490px;
+  left: 500px;
+}
+
+.about-page .org-pos-desa {
+  top: 490px;
+  left: 625px;
+}
+
+.about-page .org-pos-ci {
+  top: 490px;
+  left: 750px;
+}
+
+.about-page .org-pos-adir {
+  top: 490px;
+  left: 930px;
+  min-width: 180px;
+  border-right: 3px solid var(--blue);
+}
+
+.about-page .org-svc {
+  position: relative;
+  min-width: 92px;
+  padding: 8px 12px;
+  background: var(--off);
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+}
+
+.about-page .org-svc .org-title {
+  font-size: 11.5px;
+}
+
+.about-page .org-svc .org-kicker {
+  font-size: 9px;
+}
+
+.about-page .org-svc-gold {
+  border-top: 2px solid var(--orange);
+}
+
+.about-page .org-service-group {
+  position: absolute;
+  display: flex;
+  gap: 8px;
+}
+
+.about-page .org-group-cai {
+  top: 700px;
+  left: 0;
+}
+
+.about-page .org-group-dafc {
+  top: 700px;
+  left: 250px;
+}
+
+.about-page .org-group-desa {
+  top: 700px;
+  left: 610px;
+}
+
+.about-page .org-group-ci {
+  top: 700px;
+  left: 950px;
+}
+
+.about-page .org-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 8px;
+}
+
+.about-page .org-icon svg {
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke-width: 2;
+}
+
+.about-page .org-icon-sm {
+  width: 26px;
+  height: 26px;
+}
+
+.about-page .org-icon-sm svg {
+  width: 13px;
+  height: 13px;
+}
+
+.about-page .org-icon-gold {
+  background: #fff8ed;
+}
+
+.about-page .org-icon-gold svg {
+  stroke: var(--orange);
+}
+
+.about-page .org-icon-white {
+  background: rgba(255, 255, 255, .15);
+}
+
+.about-page .org-icon-white svg {
+  stroke: rgba(255, 255, 255, .82);
+}
+
+.about-page .org-icon-blue {
+  background: var(--bpale);
+}
+
+.about-page .org-icon-blue svg {
+  stroke: var(--blue);
+}
+
+.about-page .org-kicker {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--gray);
+  margin-bottom: 3px;
+}
+
+.about-page .org-kicker-light {
+  color: rgba(255, 255, 255, .55);
+}
+
+.about-page .org-kicker-gold {
+  color: var(--orange);
+}
+
+.about-page .org-title {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--bdark);
+}
+
+.about-page .org-supreme .org-title,
+.about-page .org-gov .org-title {
+  color: #fff;
+}
+
+.about-page .org-legend {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px 24px 26px;
+  border-top: 1px solid var(--border);
+}
+
+.about-page .org-leg-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  color: var(--gray);
+}
+
+.about-page .org-leg-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.about-page .org-leg-supreme {
+  background: var(--bdark);
+  border: 1.5px solid var(--orange);
+}
+
+.about-page .org-leg-gov {
+  background: var(--blue);
+}
+
+.about-page .org-leg-dir {
+  background: var(--bpale);
+  border: 1.5px solid var(--border);
+}
+
+.about-page .org-leg-dept {
+  background: #fff;
+  border: 1.5px solid var(--border);
+}
+
+.about-page .org-leg-svc {
+  background: var(--off);
+  border: 1.5px solid var(--border);
 }
 
 .about-page .governance-note {
@@ -895,6 +1641,18 @@
   background: rgba(255, 255, 255, .1);
 }
 
+.about-page .career-form-actions .career-alt-link {
+  background: #fff;
+  border: 2px solid rgba(26, 95, 168, .2);
+  color: var(--blue);
+}
+
+.about-page .career-form-actions .career-alt-link:hover {
+  border-color: rgba(26, 95, 168, .45);
+  background: var(--bpale);
+  color: var(--blue);
+}
+
 @media (max-width: 1024px) {
   .about-page .about-layout,
   .about-page .mv-grid,
@@ -908,6 +1666,19 @@
   .about-page .id-strip-in {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .about-page .leaders-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .about-page .career-docs-grid,
+  .about-page .career-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-page .team-posts-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 768px) {
@@ -920,7 +1691,8 @@
 @media (max-width: 640px) {
   .about-page .id-strip-in,
   .about-page .amc-stats,
-  .about-page .values-grid {
+  .about-page .values-grid,
+  .about-page .leaders-grid {
     grid-template-columns: 1fr;
   }
 
@@ -933,5 +1705,38 @@
   .about-page .cta-section {
     padding-left: 16px;
     padding-right: 16px;
+  }
+
+  .about-page .career-panel-toggle,
+  .about-page .career-panel-body {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .about-page .career-panel-head {
+    gap: 14px;
+  }
+
+  .about-page .career-panel-num {
+    width: 44px;
+    height: 44px;
+    font-size: 16px;
+  }
+
+  .about-page .career-panel-title {
+    font-size: 17px;
+  }
+
+  .about-page .org-chart-outer {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .about-page .org-collapse-toggle {
+    padding: 18px 16px;
+  }
+
+  .about-page .org-collapse-title {
+    font-size: 17px;
   }
 }

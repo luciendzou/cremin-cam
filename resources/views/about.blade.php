@@ -113,6 +113,52 @@
             </div>
         </section>
 
+        <section class="gov-section">
+            <div class="rv">
+                <div class="stag">Quelques responsables</div>
+                <h2 class="stitle">Des visages pour porter <span class="bl">la vision de l'institution</span></h2>
+                <p class="ssub">Ces responsables accompagnent la gouvernance et la mise en oeuvre des orientations de CREMIN-CAM au quotidien.</p>
+            </div>
+            <div class="gov-grid leaders-grid">
+                <div class="gov-card rv d1">
+                    <div class="leader-photo">
+                        <img src="{{ asset('dirigeants/pca.jpg') }}" alt="MOH Sylvester T.">
+                    </div>
+                    <div class="leader-card-body">
+                        <div class="leader-name">MOH Sylvester T.</div>
+                        <div class="leader-role">President du Conseil d'Administration</div>
+                    </div>
+                </div>
+                <div class="gov-card rv d2">
+                    <div class="leader-photo">
+                        <img src="{{ asset('dirigeants/pcs.png') }}" alt="EDOU OLO'O Jean Louis">
+                    </div>
+                    <div class="leader-card-body">
+                        <div class="leader-name">EDOU OLO'O Jean Louis</div>
+                        <div class="leader-role">President du Conseil de Surveillance</div>
+                    </div>
+                </div>
+                <div class="gov-card rv d3">
+                    <div class="leader-photo">
+                        <img src="{{ asset('dirigeants/dg.jpg') }}" alt="NTAP Ruben">
+                    </div>
+                    <div class="leader-card-body">
+                        <div class="leader-name">NTAP Ruben</div>
+                        <div class="leader-role">Directeur Général</div>
+                    </div>
+                </div>
+                <div class="gov-card rv d4">
+                    <div class="leader-photo">
+                        <img src="{{ asset('dirigeants/dga.jpg') }}" alt="Valentine DANG OKALE">
+                    </div>
+                    <div class="leader-card-body">
+                        <div class="leader-name">Valentine DANG OKALE</div>
+                        <div class="leader-role">Directeur Général Adjoint</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="values-section about-section">
             <div class="rv">
                 <div class="stag">Ce en quoi nous croyons</div>

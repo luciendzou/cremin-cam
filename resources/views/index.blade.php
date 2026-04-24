@@ -35,6 +35,47 @@
         }
         .home-modal-card h3 { color: #0f3d72; font-size: 1.8rem; margin-bottom: 15px; line-height: 1.2; }
         .home-modal-card p { color: #666; margin-bottom: 30px; line-height: 1.6; }
+        .home-modal-title { margin-bottom: 20px; }
+        .home-modal-copy { margin-bottom: 25px; }
+        .home-modal-video-wrap {
+            position: relative;
+            height: 0;
+            padding-bottom: 56.25%;
+            margin-bottom: 25px;
+            overflow: hidden;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        .home-modal-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        .home-modal-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .home-modal-primary {
+            display: block;
+            width: 100%;
+            text-decoration: none;
+        }
+        .home-modal-secondary {
+            color: #0f3d72;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .home-modal-overlay { padding: 16px; }
+            .home-modal-card { padding: 28px 20px; border-radius: 18px; }
+            .home-modal-card h3 { font-size: 1.4rem; }
+        }
     </style>
 
     <div class="stripe"></div>
@@ -266,15 +307,15 @@
     </main>
 
     {{-- Modal Promotionnelle --}}
-    <div id="scroll-modal" class="home-modal-overlay">
-        <div class="home-modal-card">
-            <button class="home-modal-close" id="close-modal">&times;</button>
+    <div id="scroll-modal" class="home-modal-overlay" aria-hidden="true">
+        <div class="home-modal-card" role="dialog" aria-modal="true" aria-labelledby="scroll-modal-title">
+            <button class="home-modal-close" id="close-modal" type="button" aria-label="Fermer la fenêtre">&times;</button>
             <div class="home-modal-tag">Opportunité</div>
-            <h3 style="margin-bottom: 20px;">Découvrez CREMIN-CAM en vidéo</h3>
+            <h3 id="scroll-modal-title" class="home-modal-title">Découvrez CREMIN-CAM en vidéo</h3>
             
-            <div class="modal-video-wrap" style="position: relative; padding-bottom: 56.25%; height: 0; border-radius: 16px; overflow: hidden; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+            <div class="home-modal-video-wrap">
                 <iframe id="modal-video-iframe" 
-                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
+                    class="home-modal-video"
                     src="https://www.youtube.com/embed/yiY9H14d80w" 
                     title="YouTube video player" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -282,10 +323,10 @@
                 </iframe>
             </div>
 
-            <p style="margin-bottom: 25px;">Apprenez-en plus sur notre mission et comment nous accompagnons vos projets au quotidien.</p>
-            <div style="display: flex; flex-direction: column; gap: 12px;">
-                <a href="{{ route('open-account') }}" class="btn-orange" style="display: block; width: 100%; text-decoration: none;">Ouvrir un compte</a>
-                <a href="{{ route('contact') }}" style="color: #0f3d72; font-weight: 600; font-size: 0.9rem; text-decoration: none;">Parler à un conseiller</a>
+            <p class="home-modal-copy">Apprenez-en plus sur notre mission et comment nous accompagnons vos projets au quotidien.</p>
+            <div class="home-modal-actions">
+                <a href="{{ route('open-account') }}" class="btn-orange home-modal-primary">Ouvrir un compte</a>
+                <a href="{{ route('contact') }}" class="home-modal-secondary">Parler à un conseiller</a>
             </div>
         </div>
     </div>
@@ -335,30 +376,57 @@
             // Logique de la Modal au défilement (Milieu de page)
             const promoModal = document.getElementById('scroll-modal');
             const closeBtn = document.getElementById('close-modal');
+            const videoIframe = document.getElementById('modal-video-iframe');
+            const initialVideoSrc = videoIframe?.src ?? '';
             let modalTriggered = false;
+
+            const stopVideo = () => {
+                if (!videoIframe || !initialVideoSrc) {
+                    return;
+                }
+
+                videoIframe.src = '';
+                videoIframe.src = initialVideoSrc;
+            };
+
+            const openModal = () => {
+                promoModal.classList.add('is-active');
+                promoModal.setAttribute('aria-hidden', 'false');
+                document.body.classList.add('menu-open');
+                modalTriggered = true;
+            };
+
+            const closeModal = () => {
+                promoModal.classList.remove('is-active');
+                promoModal.setAttribute('aria-hidden', 'true');
+                document.body.classList.remove('menu-open');
+                stopVideo();
+            };
 
             window.addEventListener('scroll', () => {
                 if (!modalTriggered) {
-                    // Calcul de la position actuelle du scroll + fenêtre vs hauteur totale
                     const scrollY = window.scrollY || window.pageYOffset;
                     const pageHeight = document.documentElement.scrollHeight - window.innerHeight;
-                    const scrollPercentage = (scrollY / pageHeight) * 100;
+                    const scrollPercentage = pageHeight > 0 ? (scrollY / pageHeight) * 100 : 0;
 
-                    // Déclenche à 50% de la page
                     if (scrollPercentage > 50) {
-                        promoModal.classList.add('is-active');
-                        modalTriggered = true; // Empêche de se déclencher plusieurs fois
+                        openModal();
                     }
                 }
             });
 
-            // Fermeture de la modal
-            closeBtn.addEventListener('click', () => {
-                promoModal.classList.remove('is-active');
-                // Stop the video when modal is closed
-                const videoIframe = document.getElementById('modal-video-iframe');
-                const videoSrc = videoIframe.src;
-                videoIframe.src = videoSrc; 
+            closeBtn.addEventListener('click', closeModal);
+
+            promoModal.addEventListener('click', (event) => {
+                if (event.target === promoModal) {
+                    closeModal();
+                }
+            });
+
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape' && promoModal.classList.contains('is-active')) {
+                    closeModal();
+                }
             });
         });
     </script>

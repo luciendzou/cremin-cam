@@ -114,51 +114,6 @@
             @endphp
 
             <div class="proc-steps row" id="proc-steps">
-                <div class="col-lg-4">
-                    <article class="pstep reveal d1">
-                        <div class="pstep-num">1</div>
-                        <div class="pstep-body">
-                            <div class="pstep-title">Engagement</div>
-                            <p class="pstep-desc">Vous adressez une demande a CREMIN-CAM en precisant :</p>
-                            <ul class="pstep-list">
-                                <li>Le site souhaite</li>
-                                <li>La superficie sollicitee</li>
-                                <li>Le mode de reglement choisi</li>
-                                <li>Comptant, credit ou mixte</li>
-                            </ul>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-lg-4">
-                    <article class="pstep reveal d2">
-                        <div class="pstep-num">2</div>
-                        <div class="pstep-body">
-                            <div class="pstep-title">Convention</div>
-                            <p class="pstep-desc">Apres discussion, CREMIN-CAM et le membre s'accordent sur les modalites pratiques d'acquisition.</p>
-                            <ul class="pstep-list">
-                                <li>Prix total</li>
-                                <li>Calendrier de paiement</li>
-                                <li>Conditions d'acquisition</li>
-                                <li>Obligations des parties</li>
-                            </ul>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-lg-4">
-                    <article class="pstep reveal d3">
-                        <div class="pstep-num">3</div>
-                        <div class="pstep-body">
-                            <div class="pstep-title">Reglement</div>
-                            <p class="pstep-desc">Le reglement est effectue selon les conditions arretees d'un commun accord.</p>
-                            <ul class="pstep-list">
-                                <li>Liberation du titre</li>
-                                <li>Procedure de mutation ou morcellement</li>
-                                <li>Delai maximum : 3 mois</li>
-                                <li>Frais a la charge du membre</li>
-                            </ul>
-                        </div>
-                    </article>
-                </div>
                 @foreach($steps as $index => $step)
                     <div class="col-lg-4">
                         <article class="pstep reveal d{{ $index + 1 }}">

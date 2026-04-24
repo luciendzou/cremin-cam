@@ -16,7 +16,7 @@
             <div class="hero-in rv">
                 <div class="htag">Carrieres</div>
                 <h1>Rejoignez une equipe<br><span>utile et ambitieuse</span></h1>
-                <p class="hero-sub">Evoluez dans un environnement inclusif qui prone la flexibilite. Realisez-vous avec des projets innovants dans la complicite, le pouvoir d'agir et l'agilite.</p>
+                <p class="hero-sub">Evoluez dans un environnement inclusif qui prone la flexibilite. Realisez-vous avec des projets innovants dans la complicite, le pouvoir d'agir et l'agilite, tout en profitant d'un cadre qui favorise le bien-etre.</p>
                 <div class="hero-badges">
                     <div class="hbadge"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>Environnement inclusif</div>
                     <div class="hbadge"><svg viewBox="0 0 24 24"><path d="M12 2v20M2 12h20"/></svg>Flexibilite & agilite</div>
@@ -57,77 +57,142 @@
             </div>
         </section>
 
-        <section class="values-section about-section">
+        <section class="values-section about-section careers-accordion-section">
             <div class="rv">
                 <div class="stag">Nous rejoindre</div>
-                <h2 class="stitle">Des formes d'engagement <span class="bl">pour chaque profil</span></h2>
-                <p class="ssub">Que vous soyez etudiant, jeune professionnel ou candidat a un poste, plusieurs portes d'entree existent pour avancer avec nous.</p>
+                <h2 class="stitle">Des portes d'entree <span class="bl">claires et pratiques</span></h2>
+                <p class="ssub">Cliquez sur chaque bloc pour consulter les pieces a fournir, les offres actuellement disponibles ou nous transmettre votre candidature spontanee.</p>
             </div>
 
-            <div class="values-grid">
-                <div class="vcard rv d1">
-                    <div class="vcard-num">01</div>
-                    <div class="vcard-icon"><svg viewBox="0 0 24 24"><path d="M4 19.5V5a2 2 0 012-2h8l6 6v10.5a2 2 0 01-2 2H6a2 2 0 01-2-2z"/><path d="M14 3v6h6"/></svg></div>
-                    <div class="vcard-title">Stage</div>
-                    <p class="vcard-desc">Vous pouvez nous rejoindre en tant que stagiaire academique ou professionnel, pour apprendre au contact du terrain et de nos equipes.</p>
-                </div>
-
-                <div class="vcard rv d2">
-                    <div class="vcard-num">02</div>
-                    <div class="vcard-icon"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
-                    <div class="vcard-title">Emplois</div>
-                    <p class="vcard-desc">Vous avez du potentiel pour avancer avec nous. Envoyez-nous votre demande et presentez votre profil a notre equipe.</p>
-                </div>
-
-                <div class="vcard rv d3">
-                    <div class="vcard-num">03</div>
-                    <div class="vcard-icon"><svg viewBox="0 0 24 24"><path d="M3 7h18"/><path d="M8 7V5a4 4 0 018 0v2"/><rect x="4" y="7" width="16" height="13" rx="2"/></svg></div>
-                    <div class="vcard-title">Postes disponibles</div>
-                    <p class="vcard-desc">Vous pouvez nous rejoindre en vous presentant a l'un des postes disponibles, selon les besoins actuels de l'institution.</p>
-                </div>
-
-                <div class="vcard rv d4">
-                    <div class="vcard-num">04</div>
-                    <div class="vcard-icon"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div>
-                    <div class="vcard-title">Candidature spontanee</div>
-                    <p class="vcard-desc">Si aucun poste ne correspond encore a votre profil, vous pouvez tout de meme prendre contact et partager votre motivation.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="mv-section">
-            <div class="mv-inner">
-                <div class="rv" style="text-align:center">
-                    <div class="stag" style="display:block;text-align:center">Postuler</div>
-                    <h2 class="stitle" style="text-align:center">Envoyez votre <span class="bl">demande</span></h2>
-                    <p class="ssub" style="margin:0 auto;text-align:center">Pour un stage, un emploi ou une candidature spontanee, notre equipe reste disponible pour examiner votre profil.</p>
-                </div>
-
-                <div class="about-layout" style="margin-top:52px">
-                    <div class="about-text rv d1">
-                        <p><strong>Stage</strong> : vous pouvez nous rejoindre en tant que stagiaire academique ou professionnel.</p>
-                        <p><strong>Emplois</strong> : vous avez du potentiel pour avancer avec nous, envoyez-nous votre demande.</p>
-                        <p><strong>Postes disponibles</strong> : vous pouvez nous rejoindre en vous presentant a l'un des postes disponibles.</p>
-                        <div class="highlight-box">
-                            <p>Pour toute candidature, nous vous recommandons de preparer un CV a jour et une courte presentation de votre motivation avant de nous contacter.</p>
+            <div class="career-accordion">
+                <article class="career-panel rv d1 is-open">
+                    <button class="career-panel-toggle" type="button" aria-expanded="true">
+                        <div class="career-panel-head">
+                            <div class="career-panel-num">01</div>
+                            <div>
+                                <div class="career-panel-title">Stage</div>
+                                <p class="career-panel-summary">Stage academique ou professionnel : consultez les dossiers a fournir.</p>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="about-visual rv d2">
-                        <div class="about-main-card">
-                            <div class="amc-content">
-                                <div class="amc-quote">"</div>
-                                <p class="amc-text">Construire une institution forte, c'est aussi faire grandir des femmes et des hommes capables d'innover, de servir et d'agir avec responsabilite.</p>
-                                <div class="amc-author">- Esprit RH CREMIN-CAM</div>
-                                <div class="amc-divider"></div>
-                                <div class="hero-band-btns">
-                                    <a href="{{ route('contact') }}" class="btn-orange" style="text-decoration:none">Envoyer une demande</a>
-                                    <a href="{{ route('faq') }}" class="btn-outline-w" style="text-decoration:none">Voir la FAQ</a>
-                                </div>
+                        <span class="career-panel-chevron" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </span>
+                    </button>
+                    <div class="career-panel-body">
+                        <div class="career-docs-grid">
+                            <div class="career-doc-card">
+                                <div class="career-doc-title">Stage academique</div>
+                                <ul class="career-doc-list">
+                                    <li>Demande de stage adressee a la Direction Generale</li>
+                                    <li>Lettre d'introduction ou de recommandation de l'etablissement</li>
+                                    <li>CV a jour</li>
+                                    <li>Photocopie de la carte nationale d'identite ou du recepisse</li>
+                                    <li>Precisions sur la periode et le domaine de stage recherches</li>
+                                </ul>
+                            </div>
+                            <div class="career-doc-card">
+                                <div class="career-doc-title">Stage professionnel</div>
+                                <ul class="career-doc-list">
+                                    <li>Demande de stage adressee a la Direction Generale</li>
+                                    <li>CV a jour</li>
+                                    <li>Lettre de motivation</li>
+                                    <li>Photocopie de la carte nationale d'identite ou du recepisse</li>
+                                    <li>Copie du diplome, attestation ou justificatif de formation</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                </div>
+                </article>
+
+                <article class="career-panel rv d2">
+                    <button class="career-panel-toggle" type="button" aria-expanded="false">
+                        <div class="career-panel-head">
+                            <div class="career-panel-num">02</div>
+                            <div>
+                                <div class="career-panel-title">Postes disponibles</div>
+                                <p class="career-panel-summary">Consultez les opportunites en cours au sein du CREMIN-CAM.</p>
+                            </div>
+                        </div>
+                        <span class="career-panel-chevron" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </span>
+                    </button>
+                    <div class="career-panel-body">
+                        <div class="career-empty-state">
+                            <div class="career-empty-title">Aucune offre disponible actuellement</div>
+                            <p class="career-empty-copy">Nous ne publions aucun poste ouvert pour le moment. Nous vous invitons a revenir consulter cette page regulierement ou a transmettre une candidature spontanee.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="career-panel rv d3">
+                    <button class="career-panel-toggle" type="button" aria-expanded="false">
+                        <div class="career-panel-head">
+                            <div class="career-panel-num">03</div>
+                            <div>
+                                <div class="career-panel-title">Candidature spontanee</div>
+                                <p class="career-panel-summary">Envoyez votre CV et votre lettre de motivation via le formulaire ci-dessous.</p>
+                            </div>
+                        </div>
+                        <span class="career-panel-chevron" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </span>
+                    </button>
+                    <div class="career-panel-body">
+                        <form class="career-form" id="career-form" novalidate>
+                            <div class="career-form-grid">
+                                <div class="career-field">
+                                    <label for="career-name">Nom complet <span>*</span></label>
+                                    <input id="career-name" type="text" placeholder="Votre nom complet" required>
+                                </div>
+                                <div class="career-field">
+                                    <label for="career-email">Adresse email <span>*</span></label>
+                                    <input id="career-email" type="email" placeholder="votre@email.com" required>
+                                </div>
+                            </div>
+
+                            <div class="career-form-grid">
+                                <div class="career-field">
+                                    <label for="career-phone">Telephone</label>
+                                    <input id="career-phone" type="tel" placeholder="(+237) 6XX XXX XXX">
+                                </div>
+                                <div class="career-field">
+                                    <label for="career-profile">Type de candidature <span>*</span></label>
+                                    <select id="career-profile" required>
+                                        <option value="">Selectionner</option>
+                                        <option value="stage-academique">Stage academique</option>
+                                        <option value="stage-professionnel">Stage professionnel</option>
+                                        <option value="candidature-spontanee">Candidature spontanee</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="career-field">
+                                <label for="career-message">Message <span>*</span></label>
+                                <textarea id="career-message" placeholder="Presentez brievement votre profil, votre domaine et votre motivation." required></textarea>
+                            </div>
+
+                            <div class="career-form-grid mt-4">
+                                <div class="career-field">
+                                    <label for="career-cv">CV <span>*</span></label>
+                                    <input id="career-cv" type="file" accept=".pdf,.doc,.docx" required>
+                                </div>
+                                <div class="career-field">
+                                    <label for="career-letter">Lettre de motivation <span>*</span></label>
+                                    <input id="career-letter" type="file" accept=".pdf,.doc,.docx" required>
+                                </div>
+                            </div>
+
+                            <div class="career-form-actions">
+                                <button class="bo" type="submit">Envoyer la candidature</button>
+                                <a href="{{ route('contact') }}" class="bw career-alt-link">Contacter l'equipe</a>
+                            </div>
+
+                            <p class="career-form-note">Les fichiers attendus sont au format PDF, DOC ou DOCX. Votre dossier sera examine selon les besoins et disponibilites de l'institution.</p>
+                            <div class="career-form-success" id="career-form-success">Votre candidature a bien ete preparee. Notre equipe reviendra vers vous si votre profil correspond a un besoin.</div>
+                        </form>
+                    </div>
+                </article>
             </div>
         </section>
 
@@ -148,6 +213,41 @@
             }, { threshold: 0.06 });
 
             document.querySelectorAll('.about-page .rv').forEach((element) => obs.observe(element));
+
+            document.querySelectorAll('.career-panel-toggle').forEach((toggle) => {
+                toggle.addEventListener('click', () => {
+                    const panel = toggle.closest('.career-panel');
+                    const isOpen = panel.classList.contains('is-open');
+
+                    document.querySelectorAll('.career-panel').forEach((item) => {
+                        item.classList.remove('is-open');
+                        const itemToggle = item.querySelector('.career-panel-toggle');
+                        if (itemToggle) {
+                            itemToggle.setAttribute('aria-expanded', 'false');
+                        }
+                    });
+
+                    if (!isOpen) {
+                        panel.classList.add('is-open');
+                        toggle.setAttribute('aria-expanded', 'true');
+                    }
+                });
+            });
+
+            const careerForm = document.getElementById('career-form');
+            const careerFormSuccess = document.getElementById('career-form-success');
+
+            if (careerForm && careerFormSuccess) {
+                careerForm.addEventListener('submit', (event) => {
+                    event.preventDefault();
+                    if (!careerForm.reportValidity()) {
+                        return;
+                    }
+
+                    careerFormSuccess.classList.add('is-visible');
+                    careerForm.reset();
+                });
+            }
         });
     </script>
 @endpush

@@ -212,6 +212,7 @@ Route::view('/agences', 'branches')->name('branches');
 Route::view('/a-propos', 'about')->name('about');
 Route::view('/notre-histoire', 'history')->name('history');
 Route::view('/nos-organes', 'governance')->name('governance');
+Route::view('/equipe', 'team')->name('team');
 Route::view('/carrieres', 'careers')->name('careers');
 Route::view('/contact', 'contact')->name('contact');
 Route::view('/faq', 'faq')->name('faq');

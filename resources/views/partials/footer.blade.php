@@ -5,7 +5,7 @@
         <div class="footer-top">
             <div class="footer-brand">
                 <div class="footer-brand-name">CREMIN-CAM</div>
-                <p>Crédit Mutuel d'Investissement du Cameroun, votre partenaire financier de confiance à Yaoundé depuis plus de 20 ans.</p>
+                <p>Credit Mutuel d'Investissement du Cameroun, votre partenaire financier de confiance a Yaounde depuis plus de 20 ans.</p>
 
                 <div class="footer-contact">
                     <a href="tel:+237697046925">(+237) 697 04 69 25</a>
@@ -26,10 +26,11 @@
 
             <div class="footer-col">
                 <h2>Microfinance</h2>
-                <a href="{{ route('about') }}">À propos</a>
+                <a href="{{ route('about') }}">A propos</a>
                 <a href="{{ route('history') }}">Notre histoire</a>
                 <a href="{{ route('governance') }}">Nos organes</a>
-                <a href="{{ route('careers') }}">Carrières</a>
+                <a href="{{ route('team') }}">L'equipe</a>
+                <a href="{{ route('careers') }}">Carrieres</a>
                 <a href="{{ route('open-account') }}">Ouvrir un compte</a>
             </div>
 
@@ -43,8 +44,8 @@
         </div>
 
         <div class="footer-bottom">
-            <p>© 2025 CREMIN-CAM. Tous droits réservés.</p>
-            <span>Face Camp SIC, Messa-Mokolo, Yaoundé, Cameroun</span>
+            <p>© 2025 CREMIN-CAM. Tous droits reserves.</p>
+            <span>Face Camp SIC, Messa-Mokolo, Yaounde, Cameroun</span>
         </div>
     </div>
 </footer>

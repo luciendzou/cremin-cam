@@ -65,6 +65,75 @@
 
         @include('partials.footer')
 
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const nav = document.querySelector('nav');
+                const navToggle = document.querySelector('.nav-toggle');
+                const navPanel = document.getElementById('site-nav-panel');
+                const dropdownToggles = document.querySelectorAll('.nav-dropdown-toggle');
+                const mobileBreakpoint = window.matchMedia('(max-width: 900px)');
+
+                if (!nav || !navToggle || !navPanel) {
+                    return;
+                }
+
+                const closeMobileNav = () => {
+                    nav.classList.remove('nav-open');
+                    navToggle.setAttribute('aria-expanded', 'false');
+                    document.body.classList.remove('menu-open');
+
+                    dropdownToggles.forEach((toggle) => {
+                        toggle.setAttribute('aria-expanded', 'false');
+                        toggle.parentElement?.classList.remove('is-open');
+                    });
+                };
+
+                navToggle.addEventListener('click', () => {
+                    const isOpen = nav.classList.toggle('nav-open');
+                    navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+                    document.body.classList.toggle('menu-open', isOpen && mobileBreakpoint.matches);
+                });
+
+                dropdownToggles.forEach((toggle) => {
+                    toggle.addEventListener('click', () => {
+                        if (!mobileBreakpoint.matches) {
+                            return;
+                        }
+
+                        const dropdown = toggle.parentElement;
+                        const willOpen = !dropdown.classList.contains('is-open');
+
+                        dropdownToggles.forEach((otherToggle) => {
+                            otherToggle.setAttribute('aria-expanded', 'false');
+                            otherToggle.parentElement?.classList.remove('is-open');
+                        });
+
+                        dropdown.classList.toggle('is-open', willOpen);
+                        toggle.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
+                    });
+                });
+
+                navPanel.querySelectorAll('a').forEach((link) => {
+                    link.addEventListener('click', () => {
+                        if (mobileBreakpoint.matches) {
+                            closeMobileNav();
+                        }
+                    });
+                });
+
+                mobileBreakpoint.addEventListener('change', (event) => {
+                    if (!event.matches) {
+                        closeMobileNav();
+                    }
+                });
+
+                document.addEventListener('keydown', (event) => {
+                    if (event.key === 'Escape') {
+                        closeMobileNav();
+                    }
+                });
+            });
+        </script>
         @stack('scripts')
     </body>
 </html>

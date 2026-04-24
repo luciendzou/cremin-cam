@@ -384,8 +384,13 @@
     display: flex;
     align-items: center;
     gap: 8px;
+    padding: 10px 14px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     color: rgba(255, 255, 255, 0.72);
     font-size: 13px;
+    line-height: 1;
 }
 
 .open-account-page .trust-item svg {
@@ -1286,6 +1291,39 @@
         grid-template-columns: 1fr;
         display: grid;
     }
+
+    .open-account-page .hero-inner {
+        min-height: 0;
+        gap: 28px;
+        align-items: start;
+    }
+
+    .open-account-page .hero-text {
+        padding: 32px 0 0;
+    }
+
+    .open-account-page .hero-mascot {
+        justify-content: flex-start;
+    }
+
+    .open-account-page .hero-photo-card {
+        min-height: 320px;
+        max-width: 520px;
+        border-radius: 24px 24px 0 0;
+        overflow: hidden;
+    }
+
+    .open-account-page .account-panel.is-active {
+        gap: 28px;
+    }
+
+    .open-account-page .account-card {
+        padding: 30px 26px;
+    }
+
+    .open-account-page .section-subtitle {
+        margin-bottom: 38px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1302,7 +1340,147 @@
         padding-right: 20px;
     }
 
+    .open-account-page .hero {
+        padding-top: 22px;
+    }
+
+    .open-account-page .hero-text {
+        padding-top: 24px;
+    }
+
+    .open-account-page .hero-subtitle,
+    .open-account-page .section-subtitle,
+    .open-account-page .cta-copy {
+        max-width: none;
+    }
+
+    .open-account-page .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .open-account-page .button-primary,
+    .open-account-page .button-secondary {
+        width: 100%;
+    }
+
+    .open-account-page .trust-inner {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .open-account-page .account-tabs {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        border-radius: 14px;
+    }
+
+    .open-account-page .account-tabs::-webkit-scrollbar {
+        display: none;
+    }
+
+    .open-account-page .account-tab {
+        flex: 0 0 auto;
+        min-width: max-content;
+        white-space: nowrap;
+        padding: 14px 18px;
+    }
+
+    .open-account-page .account-info h3 {
+        font-size: clamp(20px, 6vw, 26px);
+    }
+
+    .open-account-page .account-card {
+        padding: 26px 20px;
+        border-radius: 16px;
+    }
+
+    .open-account-page .step-card,
+    .open-account-page .document-card,
+    .open-account-page .benefit-card,
+    .open-account-page .appointment-card,
+    .open-account-page .mini-faq-item {
+        border-radius: 16px;
+    }
+
+    .open-account-page .step-number {
+        width: 64px;
+        height: 64px;
+        margin-bottom: 16px;
+    }
+
+    .open-account-page .document-card,
+    .open-account-page .benefit-card {
+        padding: 24px 20px;
+    }
+
     .open-account-page .form-row {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 560px) {
+    .open-account-page h1 {
+        font-size: clamp(30px, 10vw, 40px);
+    }
+
+    .open-account-page .hero-perk {
+        align-items: flex-start;
+        font-size: 13.5px;
+        line-height: 1.5;
+    }
+
+    .open-account-page .hero-photo-card {
+        min-height: 260px;
+        border-radius: 18px 18px 0 0;
+    }
+
+    .open-account-page .trust-item {
+        width: calc(50% - 6px);
+        min-height: 46px;
+        justify-content: center;
+        padding: 12px 10px;
+        border-radius: 14px;
+        text-align: center;
+        font-size: 12.5px;
+        line-height: 1.35;
+    }
+
+    .open-account-page .trust-item span {
+        text-wrap: balance;
+    }
+
+    .open-account-page .trust-item:last-child:nth-child(odd) {
+        width: 100%;
+        max-width: 260px;
+    }
+
+    .open-account-page .accounts-section,
+    .open-account-page .steps-section,
+    .open-account-page .docs-section,
+    .open-account-page .benefits-section,
+    .open-account-page .appointment-section,
+    .open-account-page .faq-mini-section,
+    .open-account-page .cta-section,
+    .open-account-page .trust-band,
+    .sv-section {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .open-account-page .account-description,
+    .open-account-page .step-description,
+    .open-account-page .document-item,
+    .open-account-page .benefit-description,
+    .open-account-page .channel-description,
+    .open-account-page .mini-faq-answer {
+        font-size: 13px;
+    }
+
+    .open-account-page .sv-related-card {
+        padding: 16px;
     }
 }
