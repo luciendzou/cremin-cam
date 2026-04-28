@@ -14,12 +14,20 @@
     <main>
         <div class="hero-band">
             <div class="hero-band-in">
-                <div class="hero-tag">Nos Services</div>
-                <h1>Des services pensés pour<br>votre quotidien bancaire</h1>
-                <p>Des opérations, canaux et accompagnements qui facilitent la gestion de vos comptes, vos paiements et vos échanges au jour le jour.</p>
-                <div class="hero-band-btns">
-                    <a href="{{ route('contact') }}" class="btn-orange">Nous contacter</a>
-                    <a href="{{ route('solutions') }}" class="btn-outline-w">Voir les solutions</a>
+                <div class="hero-band-copy">
+                    <div class="hero-tag">Nos Services</div>
+                    <h1>Des services pensés pour<br>votre quotidien bancaire</h1>
+                    <p>Des opérations, canaux et accompagnements qui facilitent la gestion de vos comptes, vos paiements et vos échanges au jour le jour.</p>
+                    <div class="hero-band-btns">
+                        <a href="{{ route('contact') }}" class="btn-orange">Nous contacter</a>
+                        <a href="{{ route('solutions') }}" class="btn-outline-w">Voir les solutions</a>
+                    </div>
+                </div>
+
+                <div class="hero-band-visual" aria-hidden="true">
+                    <div class="hero-band-portrait">
+                        <img src="{{ asset('products/services-hero.png') }}" alt="">
+                    </div>
                 </div>
             </div>
         </div>

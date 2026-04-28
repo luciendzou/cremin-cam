@@ -14,12 +14,20 @@
     <main>
         <div class="hero-band">
             <div class="hero-band-in">
-                <div class="hero-tag">Nos Solutions</div>
-                <h1>Des solutions pour votre<br>liberté financière</h1>
-                <p>Des offres concrètes pour ouvrir un compte, épargner, payer, financer vos projets et garder votre argent accessible au quotidien.</p>
-                <div class="hero-band-btns">
-                    <a href="{{ route('open-account') }}" class="btn-orange">Ouvrir un compte</a>
-                    <a href="{{ route('contact') }}" class="btn-outline-w">Contactez-nous</a>
+                <div class="hero-band-copy">
+                    <div class="hero-tag">Nos Solutions</div>
+                    <h1>Des solutions pour votre<br>liberté financière</h1>
+                    <p>Des offres concrètes pour ouvrir un compte, épargner, payer, financer vos projets et garder votre argent accessible au quotidien.</p>
+                    <div class="hero-band-btns">
+                        <a href="{{ route('open-account') }}" class="btn-orange">Ouvrir un compte</a>
+                        <a href="{{ route('contact') }}" class="btn-outline-w">Contactez-nous</a>
+                    </div>
+                </div>
+
+                <div class="hero-band-visual" aria-hidden="true">
+                    <div class="hero-band-portrait">
+                        <img src="{{ asset('products/hero-open-account.png') }}" alt="">
+                    </div>
                 </div>
             </div>
         </div>

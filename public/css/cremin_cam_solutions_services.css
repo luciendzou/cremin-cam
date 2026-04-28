@@ -61,7 +61,7 @@
 
 .hero-band {
   background: var(--blue);
-  padding: 64px 5% 56px;
+  padding: 64px 5% 0;
   position: relative;
   overflow: hidden;
 }
@@ -98,7 +98,55 @@
   margin: 0 auto;
 }
 
-.hero-band-in { position: relative; z-index: 1; }
+.hero-band-in {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 380px);
+  gap: 40px;
+  align-items: end;
+}
+
+.hero-band-copy {
+  min-width: 0;
+  padding-bottom: 6rem;
+}
+
+.hero-band-visual {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.hero-band-portrait {
+  position: relative;
+  width: 100%;
+  min-height: 404px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.hero-band-portrait::before {
+  content: "";
+  position: absolute;
+  inset: auto 8% 0;
+  height: 82%;
+  border-radius: 28px 28px 0 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, .12) 0%, rgba(255, 255, 255, .04) 100%);
+  border: 1px solid rgba(255, 255, 255, .08);
+}
+
+.hero-band-portrait img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  max-height: 460px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 24px 40px rgba(7, 27, 52, .28));
+}
 
 .hero-tag {
   display: inline-flex;
@@ -538,9 +586,24 @@
 }
 
 @media (max-width: 1024px) {
+  .hero-band-in,
   .prod-grid,
   .svc-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-band-in {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .hero-band-visual {
+    justify-content: flex-start;
+  }
+
+  .hero-band-portrait {
+    min-height: 320px;
+    max-width: 360px;
   }
 
   .process-steps {
@@ -552,6 +615,19 @@
 }
 
 @media (max-width: 768px) {
+  .hero-band {
+    padding-top: 48px;
+  }
+
+  .hero-band-portrait {
+    min-height: 280px;
+    max-width: 300px;
+  }
+
+  .hero-band-portrait img {
+    max-height: 320px;
+  }
+
   .page-tab-inner,
   .cta-band-in {
     flex-direction: column;
@@ -569,6 +645,44 @@
 }
 
 @media (max-width: 640px) {
+  .hero-band {
+    padding: 40px 16px 0;
+  }
+
+  .hero-band p {
+    max-width: none;
+  }
+
+  .hero-band-btns {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-orange,
+  .btn-outline-w {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero-band-visual {
+    justify-content: center;
+  }
+
+  .hero-band-portrait {
+    min-height: 240px;
+    max-width: 260px;
+  }
+
+  .hero-band-portrait::before {
+    inset: auto 0 0;
+    border-radius: 22px 22px 0 0;
+  }
+
+  .hero-band-portrait img {
+    max-height: 280px;
+  }
+
   .prod-grid,
   .svc-grid,
   .process-steps {
