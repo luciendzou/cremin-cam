@@ -288,6 +288,7 @@
                     <img src="{{ asset('partner/Orange-Money.jpg') }}" class="partner-logo" alt="Orange Money">
                     <img src="{{ asset('partner/mobile-money.jpg') }}" class="partner-logo" alt="MTN MoMo">
                     <img src="{{ asset('partner/Campost_logo.png') }}" class="partner-logo" alt="Campost">
+                    <img src="{{ asset('partner/fodecc.jpg') }}" class="partner-logo" alt="Campost">
                 </div>
             </div>
         </section>

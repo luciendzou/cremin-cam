@@ -14,27 +14,29 @@
     <main class="projects-page">
         <section class="hero">
             <div class="hero-in reveal">
-                <div class="hero-tag">Nos Projets phares</div>
-                <h1>Financer vos projets,<br><span>construire votre avenir</span></h1>
-                <p class="hero-sub">
-                    De l'acquisition d'un terrain a la modernisation d'une exploitation agricole -
-                    CREMIN-CAM s'engage a vos cotes avec des financements concrets, accessibles et
-                    adaptes a votre realite.
-                </p>
+                <div class="hero-copy">
+                    <div class="hero-tag">Nos Projets phares</div>
+                    <h1>Des solutions pour votre<br><span>avenir patrimonial et productif</span></h1>
+                    <p class="hero-sub">
+                        De l'acquisition d'un terrain a la modernisation d'une exploitation agricole,
+                        CREMIN-CAM vous accompagne avec des financements concrets, accessibles et adaptes
+                        a votre realite.
+                    </p>
 
-                <div class="hero-pills">
-                    <a href="{{ route('projects.immobilier') }}" class="pill active">
-                        Projet Immobilier
-                        <svg viewBox="0 0 24 24" aria-hidden="true">
-                            <path d="M12 5l7 7-7 7M5 12h14" />
-                        </svg>
-                    </a>
-                    <a href="{{ route('projects.agricole') }}" class="pill">
-                        Projet Agricole
-                        <svg viewBox="0 0 24 24" aria-hidden="true">
-                            <path d="M12 5l7 7-7 7M5 12h14" />
-                        </svg>
-                    </a>
+                    <div class="hero-btns">
+                        <a href="{{ route('projects.immobilier') }}" class="btn-orange-solid">
+                            Projet Immobilier
+                        </a>
+                        <a href="{{ route('projects.agricole') }}" class="btn-outline-w2">
+                            Projet Agricole
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual reveal d1">
+                    <div class="hero-portrait">
+                        <img src="{{ asset('projects/hero.png') }}" alt="Illustration des projets CREMIN-CAM">
+                    </div>
                 </div>
             </div>
         </section>
@@ -156,13 +158,6 @@
             }, { threshold: 0.5 });
 
             document.querySelectorAll('.counter').forEach((element) => counterObserver.observe(element));
-
-            document.querySelectorAll('.pill').forEach((pill) => {
-                pill.addEventListener('click', () => {
-                    document.querySelectorAll('.pill').forEach((item) => item.classList.remove('active'));
-                    pill.classList.add('active');
-                });
-            });
         });
     </script>
 @endpush

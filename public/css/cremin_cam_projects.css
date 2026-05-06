@@ -32,7 +32,7 @@
 
 .projects-page .hero {
   background: var(--blue);
-  padding: 72px 5% 64px;
+  padding: 64px 5% 0;
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -51,18 +51,18 @@
 }
 
 .projects-page .hero::before {
-  right: -100px;
-  top: -100px;
-  width: 450px;
-  height: 450px;
-  background: rgba(245, 160, 32, .1);
+  right: -80px;
+  top: -80px;
+  width: 400px;
+  height: 400px;
+  background: rgba(245, 160, 32, .12);
 }
 
 .projects-page .hero::after {
-  left: 30%;
-  bottom: -80px;
-  width: 300px;
-  height: 300px;
+  left: 40%;
+  bottom: -60px;
+  width: 220px;
+  height: 220px;
   background: rgba(255, 255, 255, .04);
 }
 
@@ -73,15 +73,27 @@
   margin: 0 auto;
 }
 
-.projects-page .hero-in { position: relative; z-index: 1; }
+.projects-page .hero-in {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 380px);
+  gap: 40px;
+  align-items: end;
+}
+
+.projects-page .hero-copy {
+  min-width: 0;
+  padding-bottom: 6rem;
+}
 
 .projects-page .hero-tag {
   display: inline-flex;
   align-items: center;
   gap: 7px;
-  background: rgba(245, 160, 32, .2);
+  background: rgba(245, 160, 32, .18);
   color: var(--orange);
-  padding: 5px 14px;
+  padding: 6px 14px;
   border-radius: 100px;
   font-size: 11px;
   font-weight: 700;
@@ -90,27 +102,65 @@
 }
 
 .projects-page .hero h1 {
-  font-size: clamp(30px, 4.5vw, 52px);
+  font-size: clamp(28px, 4vw, 46px);
   font-weight: 700;
   color: #fff;
   line-height: 1.1;
-  margin-bottom: 16px;
+  max-width: 680px;
+  margin-bottom: 14px;
 }
 
-.projects-page .hero h1 span { color: var(--orange); }
+.projects-page .hero h1 span { color: #fff; }
 
 .projects-page .hero .hero-sub {
-  font-size: 16px;
+  font-size: 15.5px;
   color: rgba(255, 255, 255, .72);
   line-height: 1.7;
-  max-width: 600px;
-  margin-bottom: 36px;
+  max-width: 580px;
+  margin-bottom: 28px;
 }
 
-.projects-page .hero-pills {
+.projects-page .hero-visual {
+  position: relative;
   display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  min-width: 0;
+}
+
+.projects-page .hero-portrait {
+  position: relative;
+  width: 100%;
+  min-height: 404px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.projects-page .hero-portrait::before {
+  content: "";
+  position: absolute;
+  inset: auto 8% 0;
+  height: 82%;
+  border-radius: 28px 28px 0 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, .12) 0%, rgba(255, 255, 255, .04) 100%);
+  border: 1px solid rgba(255, 255, 255, .08);
+}
+
+.projects-page .hero-portrait img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  max-height: 460px;
+  width: auto;
+  max-width: 100%;
+  min-height: 0;
+  object-fit: contain;
+  filter: drop-shadow(0 24px 40px rgba(7, 27, 52, .28));
+}
+
+.projects-page .hero-portrait img[src*="hero.png"] {
+  margin-bottom: 0;
 }
 
 .projects-page .hero-immo {
@@ -162,34 +212,6 @@
   border-radius: 24px;
   padding: 32px 34px;
   backdrop-filter: blur(8px);
-}
-
-.projects-page .pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: rgba(255, 255, 255, .1);
-  border: 1px solid rgba(255, 255, 255, .2);
-  color: #fff;
-  padding: 9px 18px;
-  border-radius: 100px;
-  font-size: 13px;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.projects-page .pill.active,
-.projects-page .pill:hover {
-  background: var(--orange);
-  border-color: var(--orange);
-}
-
-.projects-page .pill svg {
-  width: 15px;
-  height: 15px;
-  stroke: currentColor;
-  fill: none;
-  stroke-width: 2;
 }
 
 .projects-page .stat-row {
@@ -727,6 +749,7 @@
   background: #fff;
   border-radius: 12px;
   margin: 0 auto 12px;
+  overflow: hidden;
 }
 
 .fodecc-badge-logo svg,
@@ -735,6 +758,13 @@
   height: 34px;
   stroke: var(--green);
   stroke-width: 1.8;
+}
+
+.fodecc-badge-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .fodecc-name {
@@ -1820,6 +1850,32 @@
 }
 
 @media (max-width: 768px) {
+  .projects-page .hero {
+    padding: 56px 5% 0;
+  }
+
+  .projects-page .hero-in {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .projects-page .hero-copy {
+    padding: 0;
+  }
+
+  .projects-page .hero-visual {
+    justify-content: center;
+  }
+
+  .projects-page .hero-portrait {
+    width: min(100%, 420px);
+    border-radius: 24px 24px 0 0;
+  }
+
+  .projects-page .hero-portrait img {
+    min-height: 300px;
+  }
+
   .projects-page .hero-in.hero-immo-v2-inner {
     display: flex;
     flex-direction: column;
@@ -2003,6 +2059,10 @@
 }
 
 @media (max-width: 640px) {
+  .projects-page .hero {
+    padding: 42px 16px 0;
+  }
+
   .projects-page .project-overview,
   .projects-page .global-cta {
     padding-left: 16px;

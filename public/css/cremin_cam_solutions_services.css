@@ -718,6 +718,544 @@
   gap: 16px;
 }
 
+.service-hero-illustration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-check-card,
+.service-visual-card {
+  position: relative;
+  width: min(100%, 520px);
+  min-height: 260px;
+  padding: 24px;
+  border-radius: 8px;
+  background:
+    radial-gradient(circle at top right, rgba(245, 160, 32, .18), transparent 34%),
+    linear-gradient(145deg, rgba(255, 255, 255, .98), rgba(239, 246, 255, .96));
+  border: 1px solid rgba(255, 255, 255, .4);
+  box-shadow: 0 28px 50px rgba(8, 30, 64, .22);
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.service-check-card::before,
+.service-check-card::after,
+.service-visual-card::before,
+.service-visual-card::after {
+  content: "";
+  position: absolute;
+  border-radius: 999px;
+  background: rgba(26, 95, 168, .06);
+}
+
+.service-check-card::before,
+.service-visual-card::before {
+  width: 180px;
+  height: 72px;
+  top: 18px;
+  right: -54px;
+  transform: rotate(-10deg);
+}
+
+.service-check-card::after,
+.service-visual-card::after {
+  width: 150px;
+  height: 54px;
+  bottom: 20px;
+  left: -42px;
+  transform: rotate(8deg);
+}
+
+.service-check-top,
+.service-check-bottom {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+}
+
+.service-check-brand {
+  color: var(--blue);
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: .8px;
+}
+
+.service-check-chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: var(--orange-pale);
+  color: #9b6208;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.service-check-payee {
+  position: relative;
+  z-index: 1;
+  margin-top: 26px;
+  display: grid;
+  gap: 6px;
+}
+
+.service-check-payee span,
+.service-check-amount small {
+  color: #7b8798;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: .9px;
+  text-transform: uppercase;
+}
+
+.service-check-payee strong {
+  color: #102a43;
+  font-size: clamp(14px, 1vw, 22px);
+  line-height: 1.08;
+  font-weight: 800;
+}
+
+.service-check-lines {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.service-check-lines span {
+  display: block;
+  width: 100%;
+  height: 1px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(26, 95, 168, .16), rgba(26, 95, 168, .04));
+}
+
+.service-check-lines span:nth-child(2) {
+  width: 88%;
+}
+
+.service-check-lines span:nth-child(3) {
+  width: 72%;
+}
+
+.service-check-bottom {
+  margin-top: 28px;
+}
+
+.service-check-amount strong {
+  display: block;
+  margin-top: 4px;
+  color: var(--blue);
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.service-check-status {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  padding: 8px 14px;
+  border-radius: 12px;
+  background: rgba(26, 95, 168, .08);
+  color: var(--blue);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.service-visual-card-transfer,
+.service-visual-card-shield,
+.service-visual-card-currency,
+.service-visual-card-sms,
+.service-visual-card-domiciliation,
+.service-visual-card-money,
+.service-visual-card-messenger,
+.service-visual-card-credit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-visual-transfer-head,
+.service-transfer-flow,
+.service-transfer-rails,
+.service-shield-lines,
+.service-chat-lines,
+.service-credit-bars {
+  position: relative;
+  z-index: 1;
+}
+
+.service-visual-transfer-head {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.service-transfer-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: var(--orange-pale);
+  color: #9b6208;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.service-transfer-globe {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 2px solid rgba(26, 95, 168, .22);
+  box-shadow: inset 0 0 0 8px rgba(26, 95, 168, .06);
+}
+
+.service-transfer-flow {
+  display: grid;
+  grid-template-columns: 72px 1fr 72px;
+  align-items: center;
+  gap: 14px;
+  width: min(100%, 320px);
+}
+
+.service-transfer-node {
+  height: 72px;
+  border-radius: 22px;
+  background: rgba(26, 95, 168, .12);
+  color: var(--blue);
+  font-size: 20px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-transfer-node-orange {
+  background: rgba(245, 160, 32, .16);
+  color: #b36c00;
+}
+
+.service-transfer-arrow {
+  position: relative;
+  height: 6px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(26, 95, 168, .25), rgba(245, 160, 32, .4));
+}
+
+.service-transfer-arrow::after {
+  content: "";
+  position: absolute;
+  right: -2px;
+  top: 50%;
+  width: 18px;
+  height: 18px;
+  border-top: 4px solid var(--orange);
+  border-right: 4px solid var(--orange);
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.service-transfer-rails {
+  position: absolute;
+  left: 24px;
+  right: 24px;
+  bottom: 24px;
+  display: grid;
+  gap: 10px;
+}
+
+.service-transfer-rails span,
+.service-chat-lines span,
+.service-credit-bars span,
+.service-shield-lines span {
+  display: block;
+  height: 10px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(26, 95, 168, .14), rgba(26, 95, 168, .04));
+}
+
+.service-transfer-rails span:nth-child(2),
+.service-chat-lines span:nth-child(2),
+.service-shield-lines span:nth-child(2) {
+  width: 82%;
+}
+
+.service-transfer-rails span:nth-child(3),
+.service-credit-bars span:nth-child(3) {
+  width: 68%;
+}
+
+.service-shield-orb {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(245, 160, 32, .18), transparent 70%);
+}
+
+.service-shield-shape {
+  position: relative;
+  z-index: 1;
+  width: 140px;
+  height: 164px;
+  background: linear-gradient(180deg, #2d79cb, #174d8c);
+  clip-path: polygon(50% 0%, 90% 16%, 90% 52%, 50% 100%, 10% 52%, 10% 16%);
+  box-shadow: 0 18px 30px rgba(23, 77, 140, .22);
+}
+
+.service-shield-lines {
+  position: absolute;
+  left: 24px;
+  right: 24px;
+  bottom: 24px;
+  display: grid;
+  gap: 10px;
+}
+
+.service-currency-stack {
+  position: absolute;
+  width: 220px;
+  height: 132px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(26, 95, 168, .12), rgba(26, 95, 168, .04));
+  border: 1px solid rgba(26, 95, 168, .08);
+}
+
+.service-currency-stack-back {
+  transform: rotate(-8deg) translate(-22px, -10px);
+}
+
+.service-currency-stack-front {
+  position: relative;
+  transform: rotate(6deg) translate(18px, 10px);
+  background: linear-gradient(145deg, rgba(255, 255, 255, .98), rgba(232, 241, 251, .95));
+}
+
+.service-currency-symbol {
+  position: absolute;
+  top: 24px;
+  left: 28px;
+  color: var(--blue);
+  font-size: 62px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.service-currency-symbol-alt {
+  top: auto;
+  left: auto;
+  right: 30px;
+  bottom: 18px;
+  color: #c88000;
+  font-size: 48px;
+}
+
+.service-phone-shell {
+  position: relative;
+  z-index: 1;
+  width: 176px;
+  height: 250px;
+  border-radius: 32px;
+  background: #173d72;
+  padding: 16px;
+  box-shadow: 0 20px 32px rgba(11, 38, 71, .22);
+}
+
+.service-phone-screen {
+  width: 100%;
+  height: 100%;
+  border-radius: 22px;
+  background: linear-gradient(180deg, #f8fbff, #ebf4fc);
+  padding: 18px 14px;
+  display: grid;
+  gap: 12px;
+}
+
+.service-sms-bubble {
+  height: 42px;
+  border-radius: 14px 14px 14px 6px;
+  background: rgba(26, 95, 168, .12);
+}
+
+.service-sms-bubble-small {
+  width: 70%;
+  justify-self: end;
+  border-radius: 14px 14px 6px 14px;
+  background: rgba(245, 160, 32, .22);
+}
+
+.service-sms-bubble-accent {
+  width: 84%;
+}
+
+.service-building {
+  position: absolute;
+  left: 42px;
+  bottom: 28px;
+  width: 120px;
+  height: 150px;
+  border-radius: 18px 18px 8px 8px;
+  background: linear-gradient(180deg, #2a6fb9, #174d8c);
+  box-shadow: 0 16px 26px rgba(23, 77, 140, .2);
+}
+
+.service-building::before {
+  content: "";
+  position: absolute;
+  inset: 22px 18px 26px;
+  background:
+    linear-gradient(90deg, rgba(255,255,255,.75) 0 18px, transparent 18px 26px, rgba(255,255,255,.75) 26px 44px, transparent 44px 52px, rgba(255,255,255,.75) 52px 70px);
+  opacity: .7;
+}
+
+.service-domiciliation-line {
+  position: absolute;
+  right: 48px;
+  top: 56px;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  border: 3px dashed rgba(26, 95, 168, .26);
+}
+
+.service-domiciliation-card {
+  position: absolute;
+  right: 34px;
+  bottom: 42px;
+  width: 118px;
+  height: 76px;
+  border-radius: 16px;
+  background: rgba(245, 160, 32, .2);
+  box-shadow: 0 12px 22px rgba(245, 160, 32, .16);
+}
+
+.service-wallet {
+  position: relative;
+  z-index: 1;
+  width: 190px;
+  height: 128px;
+  border-radius: 24px;
+  background: linear-gradient(180deg, #2367b1, #15477f);
+  box-shadow: 0 18px 30px rgba(21, 71, 127, .24);
+}
+
+.service-wallet-pocket {
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  top: 22px;
+  height: 52px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, .14);
+}
+
+.service-wallet-coin {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle at top left, #ffd277, #f5a020);
+  box-shadow: 0 10px 18px rgba(245, 160, 32, .18);
+}
+
+.service-wallet-coin-a {
+  width: 72px;
+  height: 72px;
+  right: 40px;
+  top: 42px;
+}
+
+.service-wallet-coin-b {
+  width: 52px;
+  height: 52px;
+  right: 96px;
+  top: 26px;
+}
+
+.service-chat-bubble {
+  position: absolute;
+  border-radius: 22px;
+  box-shadow: 0 16px 26px rgba(12, 42, 77, .12);
+}
+
+.service-chat-bubble-main {
+  width: 210px;
+  height: 124px;
+  left: 52px;
+  top: 56px;
+  background: rgba(26, 95, 168, .14);
+}
+
+.service-chat-bubble-side {
+  width: 120px;
+  height: 82px;
+  right: 44px;
+  bottom: 48px;
+  background: rgba(245, 160, 32, .2);
+}
+
+.service-chat-lines {
+  position: absolute;
+  left: 76px;
+  top: 84px;
+  width: 150px;
+  display: grid;
+  gap: 12px;
+}
+
+.service-credit-card {
+  position: absolute;
+  left: 50px;
+  top: 60px;
+  width: 210px;
+  height: 126px;
+  border-radius: 22px;
+  background: linear-gradient(145deg, #2367b1, #153f70);
+  box-shadow: 0 18px 28px rgba(15, 61, 114, .24);
+}
+
+.service-credit-card::before {
+  content: "";
+  position: absolute;
+  left: 22px;
+  right: 22px;
+  top: 36px;
+  height: 16px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .18);
+}
+
+.service-credit-coin {
+  position: absolute;
+  right: 56px;
+  top: 36px;
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  background: radial-gradient(circle at top left, #ffd277, #f5a020);
+  box-shadow: 0 12px 20px rgba(245, 160, 32, .18);
+}
+
+.service-credit-bars {
+  position: absolute;
+  left: 50px;
+  right: 50px;
+  bottom: 32px;
+  display: grid;
+  gap: 10px;
+}
+
 .service-hero-slot {
   min-height: 148px;
   border: 1px dashed rgba(255, 255, 255, .4);
@@ -858,5 +1396,10 @@
   .service-detail-hero-in,
   .service-detail-grid {
     grid-template-columns: 1fr;
+  }
+
+  .service-check-card,
+  .service-visual-card {
+    width: min(100%, 460px);
   }
 }

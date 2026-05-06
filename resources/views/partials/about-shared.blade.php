@@ -56,6 +56,7 @@
                 [asset('partner/Orange-Money.jpg'), 'Orange Money'],
                 [asset('partner/mobile-money.jpg'), 'MTN MoMo'],
                 [asset('partner/Campost_logo.png'), 'Campost'],
+                [asset('partner/fodecc.jpg'), 'FODECC'],
             ] as [$src, $alt])
                 <img src="{{ $src }}" class="partner-logo" alt="{{ $alt }}">
             @endforeach

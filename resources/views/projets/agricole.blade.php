@@ -12,17 +12,25 @@
     <main class="projects-page">
         <section class="hero">
             <div class="hero-in reveal">
-                <div class="hero-tag">Projet 02 - Agriculture</div>
-                <h1>Financer l'agriculture,<br><span>nourrir la croissance</span></h1>
-                <p class="hero-sub">
-                    CREMIN-CAM accompagne les exploitants, cooperatives et filieres agricoles avec des
-                    solutions de financement, un appui terrain et des partenariats a fort impact.
-                </p>
+                <div class="hero-copy">
+                    <div class="hero-tag">Projet 02 - Agriculture</div>
+                    <h1>Financer l'agriculture,<br><span>nourrir la croissance</span></h1>
+                    <p class="hero-sub">
+                        CREMIN-CAM accompagne les exploitants, cooperatives et filieres agricoles avec des
+                        solutions de financement, un appui terrain et des partenariats a fort impact.
+                    </p>
 
-                <div class="hero-pills">
-                    <a href="{{ route('projects') }}" class="pill">Tous les projets</a>
-                    <a href="{{ route('projects.immobilier') }}" class="pill">Projet Immobilier</a>
-                    <a href="{{ route('contact') }}" class="pill active">Nous contacter</a>
+                    <div class="hero-btns">
+                        <a href="{{ route('projects') }}" class="btn-outline-w2">Tous les projets</a>
+                        <a href="{{ route('projects.immobilier') }}" class="btn-outline-w2">Projet Immobilier</a>
+                        <a href="{{ route('contact') }}" class="btn-orange-solid">Nous contacter</a>
+                    </div>
+                </div>
+
+                <div class="hero-visual reveal d1">
+                    <div class="hero-portrait">
+                        <img src="{{ asset('projects/agro.png') }}" alt="Illustration du projet agricole CREMIN-CAM">
+                    </div>
                 </div>
             </div>
         </section>
@@ -50,9 +58,7 @@
                     </div>
                     <div class="fodecc-badge">
                         <div class="fodecc-badge-logo">
-                            <svg viewBox="0 0 24 24" aria-hidden="true">
-                                <path d="M12 3v18M3 12h18M6.5 6.5l11 11M17.5 6.5l-11 11" />
-                            </svg>
+                            <img src="{{ asset('partner/fodecc.jpg') }}" alt="Logo FODECC">
                         </div>
                         <div class="fodecc-name">FODECC</div>
                         <div class="fodecc-label">Partenaire officiel</div>
