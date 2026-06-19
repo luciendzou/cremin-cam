@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\GuestController;
+use App\Http\Controllers\VerificationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -222,3 +224,12 @@ Route::view('/carrieres', 'careers')->name('careers');
 Route::view('/contact', 'contact')->name('contact');
 Route::view('/faq', 'faq')->name('faq');
 Route::view('/ouvrir-un-compte', 'solutions.open-account')->name('open-account');
+
+
+
+
+Route::get('/invites', [GuestController::class, 'index'])->name('invites.index');
+Route::post('/invites', [GuestController::class, 'store'])->name('invites.store');
+
+Route::get('/invitation-anniversaire2026', [VerificationController::class, 'show'])->name('verification.show');
+Route::post('/invitation-anniversaire2026', [VerificationController::class, 'verify'])->name('verification.verify');
