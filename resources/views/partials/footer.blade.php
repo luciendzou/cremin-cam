@@ -39,7 +39,7 @@
                 <a href="{{ route('branches') }}">Nos agences</a>
                 <a href="https://play.google.com/store/apps/details?id=com.cagecfi.pmobile_cremincam_client" target="_blank" rel="noreferrer">SOLO App</a>
                 <a href="{{ route('faq') }}">Centre d'aide</a>
-                <a href="#">Politique</a>
+                <a href="{{ route('crem-policy') }}">Politique</a>
             </div>
         </div>
 

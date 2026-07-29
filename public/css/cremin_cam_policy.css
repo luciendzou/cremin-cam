@@ -1,0 +1,136 @@
+.policy-page {
+  width: 100%;
+  background: #f7f9fc;
+  color: #1f2937;
+}
+
+.policy-hero {
+  background: linear-gradient(135deg, #0f3d72 0%, #1a5fa8 100%);
+  padding: 90px 5% 70px;
+}
+
+.policy-hero-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.policy-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 14px;
+  border-radius: 999px;
+  background: rgba(245, 160, 32, 0.2);
+  color: #ffd68a;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.policy-hero h1 {
+  font-size: clamp(2rem, 3.8vw, 3.1rem);
+  line-height: 1.12;
+  margin: 0 0 16px;
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+.policy-hero p {
+  font-size: 1rem;
+  line-height: 1.75;
+  max-width: 720px;
+  color: rgba(255,255,255,0.84);
+}
+
+.policy-hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.policy-hero-badges span {
+  padding: 8px 13px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.16);
+  font-size: 0.9rem;
+}
+
+.policy-main {
+  padding: 40px 5% 80px;
+}
+
+.policy-card {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 18px 45px rgba(15, 61, 114, 0.08);
+  padding: 36px;
+}
+
+.policy-intro {
+  border-bottom: 1px solid #e8edf3;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+}
+
+.policy-meta {
+  color: #6b7280;
+  font-size: 0.95rem;
+  margin-top: 10px;
+}
+
+.policy-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.policy-block {
+  background: #f8fbff;
+  border: 1px solid #e8edf3;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.policy-block h2 {
+  font-size: 1.1rem;
+  margin: 0 0 12px;
+  color: #0f3d72;
+}
+
+.policy-block ul {
+  padding-left: 18px;
+  margin: 0;
+  color: #4b5563;
+  line-height: 1.75;
+}
+
+.policy-contact {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid #e8edf3;
+}
+
+.policy-contact h2 {
+  margin-top: 0;
+  color: #0f3d72;
+}
+
+.policy-contact a {
+  color: #1a5fa8;
+  font-weight: 700;
+}
+
+@media (max-width: 760px) {
+  .policy-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .policy-card {
+    padding: 24px;
+  }
+}
