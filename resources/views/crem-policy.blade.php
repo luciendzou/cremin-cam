@@ -11,6 +11,7 @@
     <main class="policy-main">
         <section class="policy-card">
             <div class="policy-intro">
+                <h1>Conditions d'utilisation SOLO</h1>
                 <p>
                     SOLO by CREMIN-CAM est une application mobile conçue pour permettre aux membres et clients
                     de CREMIN-CAM d’accéder à certains services de manière simple, rapide et sécurisée.
@@ -54,6 +55,14 @@
                         <li>Les opérations réalisées via l’application doivent respecter les règles applicables à votre compte et aux services utilisés.</li>
                     </ul>
                 </article>
+            </div>
+
+            <div class="policy-contact">
+                <h2>Contact</h2>
+                <p>
+                    Pour toute question sur les conditions d’utilisation, contactez l’équipe de développement à
+                    <a href="mailto:developper@cremincam.com">developper@cremincam.com</a>.
+                </p>
             </div>
         </section>
     </main>
