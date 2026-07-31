@@ -101,7 +101,14 @@
                 <a href="{{ route('contact') }}">Contacts</a>
             </div>
 
-            <a href="{{ route('open-account') }}" class="nav-cta">Ouvrir un compte</a>
+            <div class="nav-actions">
+                <a href="{{ route('open-account') }}" class="nav-cta">Ouvrir un compte</a>
+                <a href="{{ route('login') }}" class="nav-icon-btn" aria-label="Connexion">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8V22h19.2v-2.8c0-3.2-6.4-4.8-9.6-4.8z" />
+                    </svg>
+                </a>
+            </div>
         </div>
     </div>
 </nav>

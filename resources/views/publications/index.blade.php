@@ -16,7 +16,6 @@
                         services et les opportunités clients.</p>
                     <div class="publication-hero-btns">
                         <a href="#publication-list" class="btn-orange">Voir les Inside</a>
-                        <a href="{{ route('publications.create') }}" class="btn-outline-w2">Créer un Inside</a>
                     </div>
                     <p class="publication-hero-meta">{{ $publications->count() }}
                         Inside{{ $publications->count() > 1 ? 's' : '' }} publiés</p>

@@ -283,6 +283,41 @@ nav {
   box-shadow: 0 14px 28px rgba(26, 95, 168, 0.22);
 }
 
+.nav-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.nav-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid rgba(13, 42, 97, 0.1);
+  color: var(--blue);
+  text-decoration: none;
+  box-shadow: 0 10px 24px rgba(15, 61, 114, 0.08);
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.nav-icon-btn:hover,
+.nav-icon-btn:focus {
+  background: rgba(255, 255, 255, 0.96);
+  border-color: rgba(26, 95, 168, 0.2);
+  transform: translateY(-1px);
+  box-shadow: 0 14px 28px rgba(15, 61, 114, 0.14);
+}
+
+.nav-icon-btn svg {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+}
+
 .nav-toggle {
   display: none;
   width: 52px;

@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GuestController;
 use App\Http\Controllers\VerificationController;
 use App\Http\Controllers\PublicationController;
+use App\Http\Controllers\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -226,9 +227,11 @@ Route::view('/contact', 'contact')->name('contact');
 Route::view('/faq', 'faq')->name('faq');
 Route::view('/ouvrir-un-compte', 'solutions.open-account')->name('open-account');
 Route::view('/crem-policy', 'crem-policy')->name('crem-policy');
+Route::get('/connexion', [AuthController::class, 'showLoginForm'])->name('login');
+Route::post('/connexion', [AuthController::class, 'login'])->name('login.submit');
 Route::get('/publications', [PublicationController::class, 'index'])->name('publications.index');
-Route::get('/publications/create', [PublicationController::class, 'create'])->name('publications.create');
-Route::post('/publications', [PublicationController::class, 'store'])->name('publications.store');
+Route::get('/publications/create', [PublicationController::class, 'create'])->middleware('auth')->name('publications.create');
+Route::post('/publications', [PublicationController::class, 'store'])->middleware('auth')->name('publications.store');
 Route::get('/publications/{slug}', [PublicationController::class, 'show'])->name('publications.show');
 
 Route::get('/invites', [GuestController::class, 'index'])->name('invites.index');
