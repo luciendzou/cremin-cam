@@ -8,22 +8,6 @@
 
 @section('content')
 <div class="policy-page">
-    <section class="policy-hero">
-        <div class="policy-hero-inner">
-            <div class="policy-pill">Conditions d'utilisation</div>
-            <h1>SOLO by CREMIN-CAM<br>Règles d'utilisation de l'application</h1>
-            <p>
-                En utilisant SOLO by CREMIN-CAM, vous acceptez les présentes conditions d'utilisation.
-                Elles définissent les droits, obligations et usages attendus de l'application mobile.
-            </p>
-            <div class="policy-hero-badges">
-                <span>Utilisation responsable</span>
-                <span>Sécurité des accès</span>
-                <span>Service conforme</span>
-            </div>
-        </div>
-    </section>
-
     <main class="policy-main">
         <section class="policy-card">
             <div class="policy-intro">
@@ -70,14 +54,6 @@
                         <li>Les opérations réalisées via l’application doivent respecter les règles applicables à votre compte et aux services utilisés.</li>
                     </ul>
                 </article>
-            </div>
-
-            <div class="policy-contact">
-                <h2>Contact</h2>
-                <p>
-                    Pour toute question liée à SOLO by CREMIN-CAM, aux conditions d’utilisation ou à l’assistance technique,
-                    contactez l’équipe de développement à <a href="mailto:developper@cremincam.com">developper@cremincam.com</a>.
-                </p>
             </div>
         </section>
     </main>
