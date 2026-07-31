@@ -81,6 +81,7 @@
                 <a href="{{ route('solutions') }}">Solutions</a>
                 <a href="{{ route('services') }}">Services</a>
                 <a href="{{ route('projects') }}">Projets</a>
+                <a href="{{ route('publications.index') }}">Inside</a>
                 <a href="{{ route('branches') }}">Agences</a>
                 <div class="nav-dropdown">
                     <button type="button" class="nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">
