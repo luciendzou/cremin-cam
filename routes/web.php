@@ -227,6 +227,7 @@ Route::view('/contact', 'contact')->name('contact');
 Route::view('/faq', 'faq')->name('faq');
 Route::view('/ouvrir-un-compte', 'solutions.open-account')->name('open-account');
 Route::view('/crem-policy', 'crem-policy')->name('crem-policy');
+Route::view('/privacy-policy', 'privacy-policy')->name('privacy-policy');
 Route::get('/connexion', [AuthController::class, 'showLoginForm'])->name('login');
 Route::post('/connexion', [AuthController::class, 'login'])->name('login.submit');
 Route::get('/publications', [PublicationController::class, 'index'])->name('publications.index');
